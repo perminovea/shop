@@ -17,7 +17,7 @@ body {
 }
 
 .nav {
-    background: #222222;   
+    background: #222222;
 }
 
 .container__nav {
@@ -40,14 +40,10 @@ body {
     margin-right: 41px;
 }
 
-
-    
-
 .header__floor {
     height: 764px;
     width: 100%;
     display: flex;
-    
 }
 
 .header__man {
@@ -58,7 +54,6 @@ body {
     height: 100%;
 }
 
-
 .header__tagline {
     background: url(../img/header/brand.png);
     background-repeat: no-repeat;
@@ -66,8 +61,119 @@ body {
     height: 100%;
     /* background-position: center; */
     background-position-y: center;
-
 }
 
+.section_collection {
+    background: white;
+}
 
+.container_section_collection {
+    display: flex;
+    flex-direction: column;
+}
 
+.snapshot_collection {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 65px;
+}
+
+.things__snapshot_collection {
+    margin-top: 30px;
+}
+
+.title_collection {
+    margin-top: 96px;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+}
+
+.text__collection {
+    margin-top: 6px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+}
+
+.CardProduct_collection {
+    margin-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.CardSSProduct {
+    width: 360px;
+    height: 581px;
+    background: #F8F8F8;
+    margin-top: 30px;
+}
+
+.title__Card {
+    margin-top: 25px;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.text__Card {
+    margin: 13px 0 18px 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+}
+
+.price__Card {
+    font-size: 16px;
+    line-height: 19px;
+    color: #F16D7F;
+}
+
+.btn_collection {
+    border: 1px solid #FF6A6A;
+    width: 211px;
+    height: 47px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F26376;
+    background-color: white;
+    margin-top: 48px;
+    align-self: center;
+    margin-bottom: 109px;
+}
+
+.footer {
+    background: #222224;
+}
+
+.container__block_inform {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delivery_blok, .Sales_blok, .Quality_blok {
+    width: 360px;
+    height: 134px;
+}
+
+.title__block_inform {
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.text__block_inform {
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+    margin-top: 16px;
+}
