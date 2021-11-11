@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #F1E4E6;
+}
+
+.nav {
+    background: #222222;   
+}
+
+.container__nav {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding: 18px 0 19px 0;
+    line-height: 0;
+}
+
+.search__nav {
+    margin-left: 41px;
+}
+
+.stripes__nav {
+    margin-right: 41px;
+}
+
+.logoman__nav {
+    margin-right: 41px;
+}
+
+
+    
+
+.header__floor {
+    height: 764px;
+    width: 100%;
+    display: flex;
+    
+}
+
+.header__man {
+    background: url(../img/header/man.png);
+    background-position: -225px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+
+.header__tagline {
+    background: url(../img/header/brand.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    /* background-position: center; */
+    background-position-y: center;
+
+}
+
+
+
