@@ -106,19 +106,19 @@ body {
 /* ЗАменить фото у всех на светлую  */
 
 .woman__snapshot {
-    background: url(../img/collection/snapshot/woman.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/collection/snapshot/woman.png);
 }
 
 .man__snapshot {
-    background: url(../img/collection/snapshot/man.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/collection/snapshot/man.png);
 }
 
 .kid__snapshot {
-    background: url(../img/collection/snapshot/kids.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/collection/snapshot/kids.png);
 }
 
 .things__snapshot {
-    background: url(../img/collection/snapshot/things.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/collection/snapshot/things.png);
 }
 
 .CardProduct {
