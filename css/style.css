@@ -103,7 +103,6 @@ body {
 }
 
 
-/* ЗАменить фото у всех на светлую  */
 
 .woman__snapshot {
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/collection/snapshot/woman.png);

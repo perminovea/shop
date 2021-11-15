@@ -359,3 +359,35 @@ body {
     line-height: 17px;
     color: #FFFFFF;
 }
+
+container__picPage {
+    background: url(../img/header/man.png) no-repeat -218px 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.title__picPage {
+    padding-left: 16px;
+    border-left: 12px solid#F16D7F;
+    margin-right: 100px;
+    font-weight: 900;
+    font-size: 34px;
+    line-height: 36px;
+    color: #222222;
+}
+
+
+
+
+.container__picPage {
+    margin: 200px;
+    background-color: seashell;
+    width: 800px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
