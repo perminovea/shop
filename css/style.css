@@ -144,13 +144,13 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .product__CardProduct {
     margin-top: 18px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 
 .Cards__CardProduct {
     margin-top: 30px;
@@ -261,7 +261,6 @@ body {
     align-items: center;
 }
 
-
 .title__inquiry {
     color: #222224;
     font-size: 18px;
@@ -296,7 +295,7 @@ body {
     background: #F16D7F;
     border: #F16D7F;
     height: 3.5em;
-    width:7.142857142857143em;
+    width: 7.142857142857143em;
     border-radius: 0 50px 50px 0;
     font-size: 14px;
     line-height: 17px;
@@ -319,4 +318,96 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #FBFBFB;
+}
+
+.main__catolog {
+    height: 148px;
+    background: #F8F3F4;
+}
+
+.container__main__catolog {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.title__main__catolog {
+    text-transform: uppercase;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F16D7F;
+}
+
+.nav__main__catolog {
+    display: flex;
+}
+
+.subtite__main__catolog {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #636363;
+    text-transform: uppercase;
+}
+
+.color__subtite__main__contact {
+    color: #F16D7F;
+}
+
+.section__CardProduct__catolog {
+    margin-top: 51px;
+}
+
+.filter__CardProduct__catolog {
+    margin-bottom: 35px;
+    display: flex;
+}
+
+.title__filter__CardProduct {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.containerFeatures__filter__CardProduct {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.subtite__filter__CardProduct {
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+    margin-right: 28px;
+}
+
+.container_catolog1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.w3-bar {
+    margin-top: 30px;
+    border: 1px solid #EBEBEB;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #EF5B70;
+    text-decoration: none;
+    padding: 16px;
+    width: 284px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+a {
+    text-decoration: none;
+    padding-right: 17px;
 }
