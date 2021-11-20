@@ -25,6 +25,10 @@ body {
     padding: 18px 0 19px 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 .logo__left__header {
     margin-right: 41px;
 }
@@ -159,11 +163,14 @@ body {
     background: #F8F8F8;
 }
 
+.text__Cards__CardProduct {
+    padding: 25px 29px 20px 18px;
+}
+
 .title__Card {
     font-size: 13px;
     line-height: 16px;
     color: #000000;
-    margin: 25px 28px 0 18px;
     text-transform: uppercase;
 }
 
@@ -172,14 +179,13 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #5D5D5D;
-    margin: 13px 28px 18px 18px;
+    margin: 13px 0 18px 0;
 }
 
 .price__Card {
     font-size: 16px;
     line-height: 19px;
     color: #F16D7F;
-    margin: 0 28px 0 18px;
 }
 
 .btn__CardProduct {
@@ -187,9 +193,8 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: #F26376;
-    display: block;
-    width: 211px;
-    height: 47px;
+    padding: 14px 38px;
+    text-align: center;
     background: white;
     margin-top: 49px;
 }
@@ -302,22 +307,53 @@ body {
     color: #FFFFFF;
 }
 
-.footer {
+.footer__bottom {
     background: #222224;
     height: 79px;
 }
 
-.container__footer {
+.container__footer__bottom {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.text__footer {
+.text__footer__bottom {
     font-size: 16px;
     line-height: 19px;
     color: #FBFBFB;
+}
+
+.container_logo {
+    display: flex;
+}
+
+.logo__bottom {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+}
+
+.logo__bottom:hover {
+    background: #F16D7F;
+}
+
+.logo__bottom:not(:last-child) {
+    margin-right: 7px;
+}
+
+.svg__bottom {
+    fill: black;
+    color: black;
+}
+
+.svg__bottom:hover {
+    fill: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .main__catolog {
@@ -351,7 +387,7 @@ body {
     text-transform: uppercase;
 }
 
-.color__subtite__main__contact {
+.color__subtite__main {
     color: #F16D7F;
 }
 
@@ -364,25 +400,41 @@ body {
     display: flex;
 }
 
+.left__filter__CardProduct {
+    display: flex;
+    align-items: center;
+}
+
 .title__filter__CardProduct {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
+    margin-right: 11px;
 }
 
 .containerFeatures__filter__CardProduct {
     display: flex;
     flex-grow: 1;
     justify-content: center;
+    padding-right: 70px;
+}
+
+.right__filter__CardProduct {
+    display: flex;
+    align-items: center;
+}
+
+.right__filter__CardProduct:not(:first-child) {
+    margin-left: 28px;
 }
 
 .subtite__filter__CardProduct {
     font-size: 14px;
     line-height: 17px;
     color: #6F6E6E;
-    margin-right: 28px;
+    margin-right: 10px;
 }
 
 .container_catolog1 {
@@ -405,9 +457,4 @@ body {
     display: flex;
     justify-content: center;
     align-content: center;
-}
-
-a {
-    text-decoration: none;
-    padding-right: 17px;
 }
