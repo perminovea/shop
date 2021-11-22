@@ -79,6 +79,41 @@
                 color: #F16D7F;
             }
             
+            .nav-catolog {
+                height: 148px;
+                background: #F8F3F4;
+            }
+            
+            .container__nav-catolog {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 100%;
+            }
+            
+            .title__nav-catolog {
+                text-transform: uppercase;
+                font-size: 24px;
+                line-height: 29px;
+                color: #F16D7F;
+            }
+            
+            .breadcrumbs__nav-catolog {
+                display: flex;
+            }
+            
+            .subtite__nav-catolog {
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 17px;
+                color: #636363;
+                text-transform: uppercase;
+            }
+            
+            .color__subtite__nav-catolog {
+                color: #F16D7F;
+            }
+            
             .container__collection {
                 margin-top: 35px;
                 display: flex;
@@ -206,6 +241,92 @@
                 text-align: center;
                 background: white;
                 margin-top: 49px;
+            }
+            
+            .section__benefits-catolog {
+                margin-top: 51px;
+            }
+            
+            .container__benefits-catolog {
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                width: 100%;
+            }
+            
+            .filter__benefits-catolog {
+                margin-bottom: 35px;
+                display: flex;
+            }
+            
+            .left__filter__benefits-catolog {
+                display: flex;
+                align-items: center;
+            }
+            
+            .title__filter__benefits-catolog {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+                margin-right: 11px;
+            }
+            
+            .right__filter__benefits-catolog {
+                display: flex;
+                flex-grow: 1;
+                justify-content: center;
+                padding-right: 70px;
+            }
+            
+            .choice__right__filter {
+                display: flex;
+                align-items: center;
+            }
+            
+            .choice__right__filter:not(:first-child) {
+                margin-left: 28px;
+            }
+            
+            .subtite__right__filter {
+                font-size: 14px;
+                line-height: 17px;
+                color: #6F6E6E;
+                margin-right: 10px;
+            }
+            
+            .w3-bar__catalog {
+                padding: 12px 15px;
+                margin: 0 auto;
+                margin-top: 48px;
+                display: flex;
+                border: 1px solid #EBEBEB;
+                background: #FFFFFF;
+            }
+            
+            .list__w3-bar__catalog {
+                list-style-type: none;
+            }
+            
+            .list__w3-bar__catalog:not(:first-child) {
+                margin-left: 18px;
+            }
+            
+            .w3-btn {
+                font-weight: 300;
+                font-size: 16px;
+                line-height: 19px;
+                color: #EBEBEB;
+            }
+            
+            .w3-btn__arrow {
+                list-style-type: none;
+                color: #000000;
+            }
+            
+            .w3-btn__color {
+                color: #EF5B70;
             }
             
             .section__inform {
@@ -355,152 +476,15 @@
                 margin-right: 7px;
             }
             
-            .svg__bottom {
-                fill: black;
-                color: black;
+            .svg-bottom {
+                fill: gold;
             }
             
-            .svg__bottom:hover {
+            .svg-bottom:hover {
                 fill: #FFFFFF;
-                color: #FFFFFF;
             }
-            
-            .main__catolog {
-                height: 148px;
-                background: #F8F3F4;
-            }
-            
-            .container__main__catolog {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                height: 100%;
-            }
-            
-            .title__main__catolog {
-                text-transform: uppercase;
-                font-size: 24px;
-                line-height: 29px;
-                color: #F16D7F;
-            }
-            
-            .nav__main__catolog {
-                display: flex;
-            }
-            
-            .subtite__main__catolog {
-                font-weight: 300;
-                font-size: 14px;
-                line-height: 17px;
-                color: #636363;
-                text-transform: uppercase;
-            }
-            
-            .color__subtite__main {
-                color: #F16D7F;
-            }
-            
-            .section__CardProduct__catolog {
-                margin-top: 51px;
-            }
-            
-            .filter__CardProduct__catolog {
-                margin-bottom: 35px;
-                display: flex;
-            }
-            
-            .left__filter__CardProduct {
-                display: flex;
-                align-items: center;
-            }
-            
-            .title__filter__CardProduct {
-                text-transform: uppercase;
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 17px;
-                color: #000000;
-                margin-right: 11px;
-            }
-            
-            .containerFeatures__filter__CardProduct {
-                display: flex;
-                flex-grow: 1;
-                justify-content: center;
-                padding-right: 70px;
-            }
-            
-            .right__filter__CardProduct {
-                display: flex;
-                align-items: center;
-            }
-            
-            .right__filter__CardProduct:not(:first-child) {
-                margin-left: 28px;
-            }
-            
-            .subtite__filter__CardProduct {
-                font-size: 14px;
-                line-height: 17px;
-                color: #6F6E6E;
-                margin-right: 10px;
-            }
-            
-            .container_catolog1 {
-                display: flex;
-                flex-direction: column;
-                justify-content: end;
-                width: 100%;
-            }
-            
-            .container_catolog2 {
-                display: flex;
-                justify-content: center;
-                width: 100%;
-            }
-            
-            .w3-bar {
-                padding: 12px 15px;
-                margin: 0 auto;
-                margin-top: 32px;
-                display: flex;
-                border: 1px solid #EBEBEB;
-                background: #FFFFFF;
-            }
-            
-            .w3-bar-arrow {
-                list-style-type: none;
-            }
-            
-            .w3-bar-li {
-                list-style-type: none;
-            }
-            
-            .w3-bar-li:not(:first-child) {
-                margin-left: 18px;
-            }
-            
-            .w3-button {
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 19px;
-                color: #EBEBEB;
-            }
-            
-            .w3-button_arrow {
-                font-weight: 300;
-                font-size: 16px;
-                line-height: 19px;
-                color: #000000;
-            }
-            
-            .w3-button_color {
-                color: #EF5B70;
-            }
-            
+            /*  
             .test0 {
-                /* width: 100%;
-        height: 100%; */
                 position: relative;
             }
             
@@ -607,4 +591,4 @@
             .img_test {
                 margin-right: 23px;
                 position: relative;
-            }
+            } */
