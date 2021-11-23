@@ -1,0 +1,24 @@
+.header {
+    background: #222222;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 0 19px 0;
+    }
+
+    &__container a {
+        text-decoration: none;
+    }
+
+    &__left__logo {
+        margin-right: 41px;
+    }
+
+    
+    &__right__logo:not(:last-child) {
+        margin-right: 33px;
+    }
+}
+
