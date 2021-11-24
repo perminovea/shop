@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Lato", sans-serif;
 }
@@ -143,6 +147,217 @@ body {
 
 .navСatolog__breadcrumbs__subtite--color {
   color: #f16d7f;
+}
+
+/* ______Кнопки слайдера продукта________ */
+.merchandise {
+  position: relative;
+}
+
+.merchandise__BTNslider__left {
+  position: absolute;
+  top: 388px;
+  left: 0;
+  background: rgba(42, 42, 42, 0.15);
+  width: 47px;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.merchandise__BTNslider__left svg {
+  fill: black;
+}
+
+.merchandise__BTNslider__left:hover svg {
+  fill: #F16D7F;
+}
+
+.merchandise__BTNslider__right {
+  position: absolute;
+  top: 388px;
+  right: 0;
+  background: rgba(42, 42, 42, 0.15);
+  width: 47px;
+  height: 47px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.merchandise__BTNslider__right svg {
+  fill: black;
+}
+
+.merchandise__BTNslider__right:hover svg {
+  fill: #F16D7F;
+}
+
+/* ______________________Фон с девушкой продукта_______________ */
+.slide {
+  background: #F7F7F7;
+  height: 777px;
+}
+
+.slide__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* ______________Описание продукта товара_______________ */
+.description {
+  margin-top: -65px;
+  position: relative;
+}
+
+.description__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+}
+
+.description__box {
+  width: 555px;
+}
+
+.description__box__top {
+  padding: 65px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.description__box__top h2 {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F16D7F;
+}
+
+.description__box__top h3 {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 12px;
+  color: #4D4D4D;
+  text-transform: uppercase;
+}
+
+.description__box__top p {
+  margin-top: 48px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #5E5E5E;
+}
+
+.description__box__top strong {
+  margin-top: 32px;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+}
+
+.description__box__bottom {
+  padding: 65px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  border-top: 1px solid #EAEAEA;
+}
+
+.description__box__bottom__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description__box__bottom__filter__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.description__box__bottom__filter__choice h3 {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6F6E6E;
+  margin-right: 9px;
+}
+
+.description__box__bottom__filter__choice :not(:first-child) {
+  margin-right: 23px;
+}
+
+.description__box__bottom__btn {
+  margin-top: 48px;
+  padding: 14px 56px 10px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #FF6A6A;
+}
+
+.description__box__bottom__btn span {
+  font-size: 16px;
+  line-height: 19px;
+  color: #F26376;
+  margin-left: 23px;
 }
 
 /* _________________Секция коллекции основной страницы_____________ */
@@ -411,6 +626,20 @@ body {
   color: #ef5b70;
 }
 
+/* __________Слайдер каталога продукты_____________ */
+.slideCatolog {
+  padding: 129px 0;
+}
+
+.slideCatolog__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 /* _______________Блок с инфорацией______________ */
 .inform {
   background: #222224;
@@ -525,7 +754,7 @@ body {
   color: #222224;
   opacity: 0.67;
   background: #e1e1e1;
-  border: #e1e1e1;
+  border: none;
   height: 3.5em;
   border-radius: 50px 0 0 50px;
   width: 18.285714285714285em;
@@ -534,7 +763,7 @@ body {
 
 .footer__subscribe__inquiry form button {
   background: #f16d7f;
-  border: #f16d7f;
+  border: none;
   height: 3.5em;
   width: 7.142857142857143em;
   border-radius: 0 50px 50px 0;
@@ -588,11 +817,19 @@ body {
   background: #ffffff;
 }
 
+.footer__bottom__socialnetwork__logo svg {
+  fill: #000000;
+}
+
 .footer__bottom__socialnetwork__logo:not(:last-child) {
   margin-right: 7px;
 }
 
 .footer__bottom__socialnetwork__logo:hover {
   background: #f16d7f;
+}
+
+.footer__bottom__socialnetwork__logo:hover svg {
+  fill: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
