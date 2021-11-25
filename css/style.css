@@ -490,6 +490,46 @@ body {
   background: #f8f8f8;
 }
 
+.Card__img {
+  width: 360px;
+  height: 420px;
+  position: relative;
+  background: #f8f8f8;
+}
+
+.Card__img__addtocart {
+  width: 360px;
+  height: 420px;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6)));
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.Card__img__addtocart a {
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  padding: 13px 16px 13px 50px;
+  border: 1px solid #FFFFFF;
+  background: url(../img/sign/basketAddToCatd.png) no-repeat 10px 10px;
+}
+
+.Card__img:hover .Card__img__addtocart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
 .Card__text {
   padding: 25px 29px 20px 18px;
 }
@@ -832,74 +872,5 @@ body {
 
 .footer__bottom__socialnetwork__logo:hover svg {
   fill: #ffffff;
-}
-
-.container111 {
-  background-color: darkorchid;
-  width: 100%;
-  height: 1000px;
-}
-
-.CardProduct__product-test {
-  background-color: cyan;
-  position: relative;
-  width: 360px;
-  height: 581px;
-}
-
-.CardProduct__product-test:hover__test11 {
-  position: absolute;
-}
-
-.CardProduct__product-test:hover__Card-test {
-  position: relative;
-}
-
-.CardProduct__product-test__test11 {
-  width: 360px;
-  height: 581px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  position: relative;
-  background-color: darkgoldenrod;
-}
-
-.CardProduct__product-test__Card-test {
-  width: 360px;
-  height: 581px;
-  background: #f8f8f8;
-  position: absolute;
-}
-
-.CardProduct__product-test__Card-test__text-test {
-  padding: 25px 29px 20px 18px;
-}
-
-.CardProduct__product-test__Card-test__text-test h3 {
-  font-size: 153px;
-  line-height: 16px;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.CardProduct__product-test__Card-test__text-test p {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #5d5d5d;
-  margin: 13px 0 18px 0;
-}
-
-.CardProduct__product-test__Card-test__text-test span {
-  font-size: 16px;
-  line-height: 19px;
-  color: #f16d7f;
 }
 /*# sourceMappingURL=style.css.map */
