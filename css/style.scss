@@ -477,6 +477,84 @@ body {
             }
         }
     }
+    &__delivery {
+        & h2 {
+            margin-top: 22px;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+        & form {
+            display: flex;
+            flex-direction: column;
+            & input {
+                width: 359px;
+                height: 44px;
+                margin-top: 21px;
+                font-weight: 300;
+                font-size: 13px;
+                line-height: 16px;
+                color: #222222;
+            }
+            & button {
+                margin-top: 24px;
+                width: 100px;
+                height: 34px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 300;
+                font-size: 11px;
+                line-height: 13px;
+                color: #4A4A4A;
+                text-transform: uppercase;
+                border: 1px solid #A4A4A4;
+                background: #FFFFFF;
+            }
+        }
+        &__completion {
+            margin-top: 57px;
+            background: #F5F3F3;
+            padding: 39px 0 42px 0;
+            &__price {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                & h3 {
+                    font-size: 11px;
+                    line-height: 13px;
+                    color: #4A4A4A;
+                    margin-right: 34px;
+                    & strong {
+                        margin-left: 25px;
+                    }
+                }
+                & h4 {
+                    margin-top: 12px;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #222222;
+                    margin-right: 37px;
+                    & strong {
+                        margin-left: 25px;
+                        color: #f16d7f;
+                    }
+                }
+            }
+            &__end {
+                & a {
+                    background: #F16D7F;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #FFFFFF;
+                    padding: 15px 42px;
+                }
+            }
+        }
+    }
 }
 
 .shopCard {
