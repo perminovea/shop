@@ -2,6 +2,14 @@
     width: 360px;
     height: 581px;
     background: #f8f8f8;
+    &:hover {
+        .Card__img__addtocart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
     &__img {
         width: 360px;
         height: 420px;
@@ -22,14 +30,6 @@
                 padding: 13px 16px 13px 50px;
                 border: 1px solid #FFFFFF;
                 background: url(../img/sign/basketAddToCatd.png) no-repeat 10px 10px;
-            }
-        }
-        &:hover {
-            .Card__img__addtocart {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
             }
         }
     }
