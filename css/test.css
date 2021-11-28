@@ -1,0 +1,231 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.wraper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.top {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* _______________Навигация страницы католог_________________ */
+.navСatolog {
+  height: 148px;
+  background: #f8f3f4;
+}
+
+.navСatolog__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.navСatolog h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+
+.navСatolog__breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navСatolog__breadcrumbs__subtite {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+  text-transform: uppercase;
+}
+
+.navСatolog__breadcrumbs__subtite--color {
+  color: #f16d7f;
+}
+
+.section__benefits-catolog {
+  margin-top: 51px;
+  padding-bottom: 96px;
+}
+
+.container__benefits-catolog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 100%;
+}
+
+.filter__benefits-catolog {
+  margin-bottom: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter__benefits-catolog details {
+  position: absolute;
+}
+
+.filter__benefits-catolog details summary {
+  list-style-type: none;
+}
+
+.details1 {
+  margin-top: 18px;
+}
+
+.details1 li {
+  list-style-type: none;
+  margin-top: 11px;
+}
+
+.details1 ul {
+  margin-top: 24px;
+  margin-left: 12px;
+}
+
+.summary1 {
+  height: 37px;
+  padding-left: 16px;
+  border-left: 5px solid #EF5B70;
+  font-size: 14px;
+  line-height: 17px;
+  color: #EF5B70;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.left__filter__benefits-catolog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.title__filter__benefits-catolog {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-right: 11px;
+}
+
+.right__filter__benefits-catolog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 70px;
+}
+
+.choice__right__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choice__right__filter:not(:first-child) {
+  margin-left: 28px;
+}
+
+.subtite__right__filter {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+  margin-right: 10px;
+}
+
+.w3-bar__catalog {
+  padding: 12px 15px;
+  margin: 0 auto;
+  margin-top: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ebebeb;
+  background: #ffffff;
+}
+
+.list__w3-bar__catalog {
+  list-style-type: none;
+}
+
+.list__w3-bar__catalog:not(:first-child) {
+  margin-left: 18px;
+}
+
+.w3-btn {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ebebeb;
+}
+
+.w3-btn__arrow {
+  list-style-type: none;
+  color: #000000;
+}
+
+.w3-btn__color {
+  color: #ef5b70;
+}
+/*# sourceMappingURL=test.css.map */
