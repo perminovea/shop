@@ -478,6 +478,7 @@ body {
         }
     }
     &__delivery {
+        width: 359px;
         & h2 {
             margin-top: 22px;
             font-weight: 300;
@@ -544,6 +545,10 @@ body {
                 }
             }
             &__end {
+                border-top: 1px solid #E2E2E2;
+                margin: 21px 43px 0 44px;
+                padding-top: 27px;
+                width: 275px;
                 & a {
                     background: #F16D7F;
                     font-weight: 300;
@@ -561,8 +566,7 @@ body {
     width: 100%;
     height: 306px;
     display: flex;
-    box-shadow: 10px 15px 15px #A4A4A4;
-    ;
+    box-shadow: 10px 15px 15px #E5E5E5;
     &__img {
         & img {
             width: 262px;
@@ -571,7 +575,9 @@ body {
     }
     &__text {
         padding: 22px 22px 62px 32px;
+        width: 390px;
         &__title {
+            width: 100%;
             position: relative;
             margin-bottom: 42px;
             & h2 {

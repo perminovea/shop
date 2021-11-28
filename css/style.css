@@ -735,6 +735,10 @@ body {
   border: 1px solid #A4A4A4;
 }
 
+.shopCardProduct__delivery {
+  width: 359px;
+}
+
 .shopCardProduct__delivery h2 {
   margin-top: 22px;
   font-weight: 300;
@@ -829,6 +833,13 @@ body {
   color: #f16d7f;
 }
 
+.shopCardProduct__delivery__completion__end {
+  border-top: 1px solid #E2E2E2;
+  margin: 21px 43px 0 44px;
+  padding-top: 27px;
+  width: 275px;
+}
+
 .shopCardProduct__delivery__completion__end a {
   background: #F16D7F;
   font-weight: 300;
@@ -844,8 +855,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: 10px 15px 15px #A4A4A4;
-          box-shadow: 10px 15px 15px #A4A4A4;
+  -webkit-box-shadow: 10px 15px 15px #E5E5E5;
+          box-shadow: 10px 15px 15px #E5E5E5;
 }
 
 .shopCard__img img {
@@ -855,9 +866,11 @@ body {
 
 .shopCard__text {
   padding: 22px 22px 62px 32px;
+  width: 390px;
 }
 
 .shopCard__text__title {
+  width: 100%;
   position: relative;
   margin-bottom: 42px;
 }
