@@ -137,7 +137,14 @@ body {
   display: flex;
 }
 
-.navСatolog__breadcrumbs__subtite {
+.navСatolog__breadcrumbs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.navСatolog__breadcrumbs ul li {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -145,8 +152,14 @@ body {
   text-transform: uppercase;
 }
 
-.navСatolog__breadcrumbs__subtite--color {
+.navСatolog__breadcrumbs ul li:last-child a {
   color: #f16d7f;
+}
+
+.navСatolog__breadcrumbs ul li + li:before {
+  padding: 4px;
+  color: black;
+  content: "/";
 }
 
 /* ___________________SHOPPING CART______________ */
@@ -758,6 +771,7 @@ body {
 }
 
 .shopCardProduct__delivery form input {
+  padding-left: 16px;
   width: 359px;
   height: 44px;
   margin-top: 21px;
@@ -765,6 +779,42 @@ body {
   font-size: 13px;
   line-height: 16px;
   color: #222222;
+}
+
+.shopCardProduct__delivery form input:first-child {
+  color: #B1B1B1;
+}
+
+.shopCardProduct__delivery form input::-webkit-input-placeholder {
+  color: #222222;
+}
+
+.shopCardProduct__delivery form input:-ms-input-placeholder {
+  color: #222222;
+}
+
+.shopCardProduct__delivery form input::-ms-input-placeholder {
+  color: #222222;
+}
+
+.shopCardProduct__delivery form input::placeholder {
+  color: #222222;
+}
+
+.shopCardProduct__delivery form input:first-child::-webkit-input-placeholder {
+  color: #B1B1B1;
+}
+
+.shopCardProduct__delivery form input:first-child:-ms-input-placeholder {
+  color: #B1B1B1;
+}
+
+.shopCardProduct__delivery form input:first-child::-ms-input-placeholder {
+  color: #B1B1B1;
+}
+
+.shopCardProduct__delivery form input:first-child::placeholder {
+  color: #B1B1B1;
 }
 
 .shopCardProduct__delivery form button {

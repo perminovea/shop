@@ -80,12 +80,12 @@ body {
   color: #f16d7f;
 }
 
-.section__benefits-catolog {
-  margin-top: 51px;
-  padding-bottom: 96px;
+.benefits {
+  padding: 51px 0 96px 0;
+  position: relative;
 }
 
-.container__benefits-catolog {
+.benefits__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,42 +99,55 @@ body {
   width: 100%;
 }
 
-.filter__benefits-catolog {
+.benefits__filter {
   margin-bottom: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.filter__benefits-catolog details {
-  position: absolute;
+.benefits__filter__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.filter__benefits-catolog details summary {
-  list-style-type: none;
+.benefits__filter__right__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.details1 {
-  margin-top: 18px;
+.benefits__filter__right__choice:not(:first-child) {
+  margin-left: 28px;
 }
 
-.details1 li {
-  list-style-type: none;
-  margin-top: 11px;
-}
-
-.details1 ul {
-  margin-top: 24px;
-  margin-left: 12px;
-}
-
-.summary1 {
-  height: 37px;
-  padding-left: 16px;
-  border-left: 5px solid #EF5B70;
+.benefits__filter__right__choice h2 {
   font-size: 14px;
   line-height: 17px;
-  color: #EF5B70;
+  color: #6f6e6e;
+  margin-right: 10px;
+}
+
+.filter {
+  width: 360px;
+  background: #FFFFFF;
+  position: relative;
+  list-style-type: none;
+}
+
+.filter::-webkit-details-marker {
+  display: none;
+}
+
+.filter__name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,16 +156,7 @@ body {
           align-items: center;
 }
 
-.left__filter__benefits-catolog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.title__filter__benefits-catolog {
+.filter__name h2 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
@@ -161,71 +165,65 @@ body {
   margin-right: 11px;
 }
 
-.right__filter__benefits-catolog {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-right: 70px;
+.filter__content {
+  padding: 16px 17px 16px 17px;
+  position: absolute;
+  z-index: 1;
+  list-style-type: none;
+  background: #FFFFFF;
+  width: 360px;
+  left: 0;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  list-style-type: none;
 }
 
-.choice__right__filter {
+.filter__content summary {
+  height: 37px;
+  padding-left: 16px;
+  border-left: 5px solid #f16d7f;
+  list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-bottom: 1px solid #EBEBEB;
 }
 
-.choice__right__filter:not(:first-child) {
-  margin-left: 28px;
-}
-
-.subtite__right__filter {
-  font-size: 14px;
-  line-height: 17px;
-  color: #6f6e6e;
-  margin-right: 10px;
-}
-
-.w3-bar__catalog {
-  padding: 12px 15px;
-  margin: 0 auto;
-  margin-top: 48px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid #ebebeb;
-  background: #ffffff;
-}
-
-.list__w3-bar__catalog {
+.filter__content ul {
+  margin-top: 24px;
+  margin-left: 12px;
   list-style-type: none;
 }
 
-.list__w3-bar__catalog:not(:first-child) {
-  margin-left: 18px;
+.filter__content ul li:not(:first-child) {
+  margin-top: 11px;
 }
 
-.w3-btn {
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ebebeb;
+.filter details:not(:first-child) {
+  margin-top: 18px;
 }
 
-.w3-btn__arrow {
-  list-style-type: none;
-  color: #000000;
+.filter details::-webkit-details-marker {
+  display: none;
 }
 
-.w3-btn__color {
-  color: #ef5b70;
+.filter[open] {
+  padding-left: 16px;
+}
+
+.filter[open] summary {
+  color: #f16d7f;
+}
+
+.filter[open] > summary {
+  color: #f16d7f;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+          box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+  background: #FFFFFF;
 }
 /*# sourceMappingURL=test.css.map */

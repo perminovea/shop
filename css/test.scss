@@ -60,118 +60,106 @@ body {
     }
 }
 
-.section__benefits-catolog {
-    margin-top: 51px;
-    padding-bottom: 96px;
-}
-
-.container__benefits-catolog {
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    width: 100%;
-}
-
-.filter__benefits-catolog {
-    margin-bottom: 35px;
-    display: flex;
-    & details {
-        position: absolute;
-        & summary {
-            list-style-type: none;
+.benefits {
+    padding: 51px 0 96px 0;
+    position: relative;
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        width: 100%;
+    }
+    &__filter {
+        margin-bottom: 35px;
+        display: flex;
+        &__right {
+            display: flex;
+            margin-left: 30px;
+            justify-content: center;
+            &__choice {
+                display: flex;
+                align-items: center;
+                &:not(:first-child) {
+                    margin-left: 28px;
+                }
+                & h2 {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #6f6e6e;
+                    margin-right: 10px;
+                }
+            }
         }
     }
 }
 
-.details1 {
-    margin-top: 18px;
-    & li {
+.filter {
+    width: 360px;
+    background: #FFFFFF;
+    position: relative;
+    list-style-type: none;
+    &::-webkit-details-marker {
+        display: none;
+    }
+    &__name {
+        display: flex;
+        align-items: center;
+        & h2 {
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            margin-right: 11px;
+        }
+    }
+    &__content {
+        padding: 16px 17px 16px 17px;
+        position: absolute;
+        z-index: 1;
         list-style-type: none;
-        margin-top: 11px;
+        background: #FFFFFF;
+        width: 360px;
+        left: 0;
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+        list-style-type: none;
+        & summary {
+            height: 37px;
+            padding-left: 16px;
+            border-left: 5px solid #f16d7f;
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #EBEBEB;
+        }
+        & ul {
+            margin-top: 24px;
+            margin-left: 12px;
+            list-style-type: none;
+            li:not(:first-child) {
+                margin-top: 11px;
+            }
+        }
     }
-    & ul {
-        margin-top: 24px;
-        margin-left: 12px;
+    & details:not(:first-child) {
+        margin-top: 18px;
+    }
+    & details::-webkit-details-marker {
+        display: none;
     }
 }
 
-.summary1 {
-    height: 37px;
+.filter[open] {
     padding-left: 16px;
-    border-left: 5px solid #EF5B70;
-    font-size: 14px;
-    line-height: 17px;
-    color: #EF5B70;
-    display: flex;
-    align-items: center;
+    & summary {
+        color: #f16d7f;
+    }
 }
 
-.left__filter__benefits-catolog {
-    display: flex;
-    align-items: center;
-}
-
-.title__filter__benefits-catolog {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    margin-right: 11px;
-}
-
-.right__filter__benefits-catolog {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    padding-right: 70px;
-}
-
-.choice__right__filter {
-    display: flex;
-    align-items: center;
-}
-
-.choice__right__filter:not(:first-child) {
-    margin-left: 28px;
-}
-
-.subtite__right__filter {
-    font-size: 14px;
-    line-height: 17px;
-    color: #6f6e6e;
-    margin-right: 10px;
-}
-
-.w3-bar__catalog {
-    padding: 12px 15px;
-    margin: 0 auto;
-    margin-top: 48px;
-    display: flex;
-    border: 1px solid #ebebeb;
-    background: #ffffff;
-}
-
-.list__w3-bar__catalog {
-    list-style-type: none;
-}
-
-.list__w3-bar__catalog:not(:first-child) {
-    margin-left: 18px;
-}
-
-.w3-btn {
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #ebebeb;
-}
-
-.w3-btn__arrow {
-    list-style-type: none;
-    color: #000000;
-}
-
-.w3-btn__color {
-    color: #ef5b70;
+.filter[open]>summary {
+    color: #f16d7f;
+    outline: none;
+    border: none;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    background: #FFFFFF;
 }
