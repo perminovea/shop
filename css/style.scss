@@ -643,6 +643,101 @@ body {
 }
 
 
+/* _________________Регистрация_____________________ */
+
+.registration {
+    padding: 64px 0 96px 0;
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
+    & .form {
+        width: 360px;
+        display: flex;
+        flex-direction: column;
+        & legend {
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color: #222222;
+        }
+        &__field {
+            height: 44px;
+            width: 100%;
+            margin-top: 21px;
+            border: 1px solid #A4A4A4;
+        }
+        & fieldset {
+            display: flex;
+            border: none;
+            align-items: center;
+            margin: 31px 0 33px 0;
+            font-weight: 300;
+            font-size: 11px;
+            line-height: 13px;
+            color: #000000;
+            input {
+                width: 17px;
+                height: 17px;
+                border: 1px solid #A4A4A4;
+                margin-right: 10px;
+                &:last-child {
+                    margin-left: 20px;
+                }
+            }
+        }
+        & p {
+            margin-top: 15px;
+            width: 100%;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: #B1B1B1;
+        }
+        &__btn {
+            margin-top: 39px;
+            width: 167px;
+            height: 50px;
+            border: none;
+            background: #F16D7F;
+            display: flex;
+            align-items: center;
+            padding-left: 29px;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+        }
+    }
+    &__text {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #000000;
+        & h2 {
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+        & p {
+            max-width: 652px;
+            margin-top: 22px;
+        }
+        & ul {
+            margin-top: 21px;
+            li {
+                list-style-type: none;
+                list-style-image: url(../img/sign/checkmark.svg);
+                list-style-position: inside;
+            }
+            li:not(:first-child) {
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+
 /* _______________Блок с инфорацией______________ */
 
 .inform {
