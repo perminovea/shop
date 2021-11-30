@@ -876,3 +876,35 @@ body {
         }
     }
 }
+
+@keyframes box {
+    0% {
+        background-color: tomato;
+    }
+    20% {
+        background-color: red;
+        opacity: 0;
+    }
+    40% {
+        background-color: orange;
+        border-radius: 50%;
+    }
+    60% {
+        transform: rotateX(360deg);
+    }
+    100% {
+        background-color: green;
+    }
+}
+
+.CardProduct__product:hover {
+    .CardProduct__product__Card {
+        background: #ef5b70;
+        .Card__img {
+            display: none;
+        }
+        .Card__text {
+            display: none;
+        }
+    }
+}
