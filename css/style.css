@@ -1008,6 +1008,27 @@ body {
   width: 100%;
   margin-top: 21px;
   border: 1px solid #A4A4A4;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  padding-left: 17px;
+  color: #B1B1B1;
+}
+
+.registration .form__field::-webkit-input-placeholder {
+  color: #B1B1B1;
+}
+
+.registration .form__field:-ms-input-placeholder {
+  color: #B1B1B1;
+}
+
+.registration .form__field::-ms-input-placeholder {
+  color: #B1B1B1;
+}
+
+.registration .form__field::placeholder {
+  color: #B1B1B1;
 }
 
 .registration .form fieldset {
@@ -1061,6 +1082,9 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #FFFFFF;
+  background-image: url(../img/sign/arrow__btn-reg.svg);
+  background-repeat: no-repeat;
+  background-position: 110px 20px;
 }
 
 .registration__text {
@@ -1087,13 +1111,400 @@ body {
 }
 
 .registration__text ul li {
+  margin-left: 30px;
+  padding-left: 20px;
   list-style-type: none;
   list-style-image: url(../img/sign/checkmark.svg);
-  list-style-position: inside;
+  /* list-style-position: inside; */
 }
 
 .registration__text ul li:not(:first-child) {
   margin-top: 16px;
+}
+
+.registration:hover form {
+  -webkit-animation: test0 25s;
+          animation: test0 25s;
+}
+
+.registration:hover ul {
+  -webkit-animation: test 15s;
+          animation: test 15s;
+}
+
+.registration:hover ul li:nth-child(1) {
+  -webkit-animation: test1 25s;
+          animation: test1 25s;
+}
+
+.registration:hover ul li:nth-child(2) {
+  -webkit-animation: test2 25s;
+          animation: test2 25s;
+}
+
+.registration:hover ul li:nth-child(3) {
+  -webkit-animation: test3 25s;
+          animation: test3 25s;
+}
+
+.registration:hover ul li:nth-child(4) {
+  -webkit-animation: test4 25s;
+          animation: test4 25s;
+}
+
+.registration:hover ul li:nth-child(5) {
+  -webkit-animation: test5 25s;
+          animation: test5 25s;
+}
+
+@-webkit-keyframes test {
+  0% {
+    -webkit-transform: rotateX(720deg);
+            transform: rotateX(720deg);
+  }
+  20% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+  40% {
+  }
+  60% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+  100% {
+  }
+}
+
+@keyframes test {
+  0% {
+    -webkit-transform: rotateX(720deg);
+            transform: rotateX(720deg);
+  }
+  20% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+  40% {
+  }
+  60% {
+    -webkit-transform: rotateX(360deg);
+            transform: rotateX(360deg);
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes test0 {
+  0% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes test0 {
+  0% {
+    opacity: 0.5;
+  }
+  20% {
+    opacity: 0;
+  }
+  40% {
+  }
+  60% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes test1 {
+  0% {
+    color: aqua;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  20% {
+    margin-left: -300px;
+    color: gold;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  40% {
+    margin-left: -400px;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  60% {
+    margin-left: -500px;
+    color: black;
+  }
+  100% {
+  }
+}
+
+@keyframes test1 {
+  0% {
+    color: aqua;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  20% {
+    margin-left: -300px;
+    color: gold;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  40% {
+    margin-left: -400px;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  60% {
+    margin-left: -500px;
+    color: black;
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes test2 {
+  0% {
+    color: hotpink;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  20% {
+    margin-left: -400px;
+    color: lightblue;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  40% {
+    margin-left: -500px;
+    color: black;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  60% {
+    margin-left: -500px;
+  }
+  100% {
+  }
+}
+
+@keyframes test2 {
+  0% {
+    color: hotpink;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  20% {
+    margin-left: -400px;
+    color: lightblue;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  40% {
+    margin-left: -500px;
+    color: black;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  60% {
+    margin-left: -500px;
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes test3 {
+  0% {
+    color: lightseagreen;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  20% {
+    margin-left: -500px;
+    color: black;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  40% {
+    margin-left: -500px;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  60% {
+    margin-left: -335px;
+  }
+  100% {
+  }
+}
+
+@keyframes test3 {
+  0% {
+    color: lightseagreen;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  20% {
+    margin-left: -500px;
+    color: black;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  40% {
+    margin-left: -500px;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  60% {
+    margin-left: -335px;
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes test4 {
+  0% {
+    color: yellow;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  20% {
+    margin-left: -400px;
+    color: springgreen;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  40% {
+    margin-left: -500px;
+    color: black;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  60% {
+    margin-left: -500px;
+  }
+  100% {
+  }
+}
+
+@keyframes test4 {
+  0% {
+    color: yellow;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  20% {
+    margin-left: -400px;
+    color: springgreen;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  40% {
+    margin-left: -500px;
+    color: black;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  60% {
+    margin-left: -500px;
+  }
+  100% {
+  }
+}
+
+@-webkit-keyframes test5 {
+  0% {
+    color: turquoise;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  20% {
+    margin-left: -300px;
+    color: peru;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  40% {
+    margin-left: -400px;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  60% {
+    margin-left: -500px;
+    color: black;
+  }
+  100% {
+  }
+}
+
+@keyframes test5 {
+  0% {
+    color: turquoise;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  20% {
+    margin-left: -300px;
+    color: peru;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+  }
+  40% {
+    margin-left: -400px;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  60% {
+    margin-left: -500px;
+    color: black;
+  }
+  100% {
+  }
 }
 
 /* _______________Блок с инфорацией______________ */
@@ -1287,59 +1698,5 @@ body {
 
 .footer__bottom__socialnetwork__logo:hover svg {
   fill: #ffffff;
-}
-
-@-webkit-keyframes box {
-  0% {
-    background-color: tomato;
-  }
-  20% {
-    background-color: red;
-    opacity: 0;
-  }
-  40% {
-    background-color: orange;
-    border-radius: 50%;
-  }
-  60% {
-    -webkit-transform: rotateX(360deg);
-            transform: rotateX(360deg);
-  }
-  100% {
-    background-color: green;
-  }
-}
-
-@keyframes box {
-  0% {
-    background-color: tomato;
-  }
-  20% {
-    background-color: red;
-    opacity: 0;
-  }
-  40% {
-    background-color: orange;
-    border-radius: 50%;
-  }
-  60% {
-    -webkit-transform: rotateX(360deg);
-            transform: rotateX(360deg);
-  }
-  100% {
-    background-color: green;
-  }
-}
-
-.CardProduct__product:hover .CardProduct__product__Card {
-  background: #ef5b70;
-}
-
-.CardProduct__product:hover .CardProduct__product__Card .Card__img {
-  display: none;
-}
-
-.CardProduct__product:hover .CardProduct__product__Card .Card__text {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */
