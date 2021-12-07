@@ -55,7 +55,7 @@ body {
 
 .header__main {
   width: 32px;
-  height: 23px;
+  /* height: 23px; */
   color: crimson;
 }
 
@@ -98,7 +98,7 @@ body {
   z-index: 15;
   background: #FFFFFF;
   width: 232px;
-  height: calc(100vh - 79px);
+  height: calc(100vh - 78px);
   top: 79px;
   right: 0;
   outline: 3px solid orangered;

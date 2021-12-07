@@ -45,21 +45,23 @@ body {
         padding-left: 16px;
         border-left: 12px solid#F16D7F;
         margin-right: 100px;
-        font-weight: 900;
+        font-weight: 700;
         font-size: 32px;
-        line-height: 36px;
+        line-height: 38px;
         color: #222222;
         text-transform: uppercase;
         &--fat {
             font-size: 48px;
             line-height: 58px;
+            font-weight: 900;
         }
         &--color {
             color: #f16d7f;
+            font-size: 32px;
+            line-height: 38px;
         }
     }
 }
-
 
 /* _______________Навигация страницы католог_________________ */
 
@@ -96,7 +98,7 @@ body {
                 }
             }
         }
-        & ul li+li:before {
+        & ul li + li:before {
             padding: 4px;
             color: black;
             content: "/";
@@ -104,18 +106,16 @@ body {
     }
 }
 
-
 /* ___________________SHOPPING CART______________ */
 
 .shopping__navСatolog {
     & h1 {
         font-size: 24px;
         line-height: 29px;
-        color: #F16D7F;
+        color: #f16d7f;
         text-transform: uppercase;
     }
 }
-
 
 /* ______Кнопки слайдера продукта________ */
 
@@ -161,7 +161,6 @@ body {
     }
 }
 
-
 /* ______________________Фон с девушкой продукта_______________ */
 
 .slide {
@@ -172,7 +171,6 @@ body {
     justify-content: center;
     width: 100%;
 }
-
 
 /* ______________Описание продукта товара_______________ */
 
@@ -265,12 +263,11 @@ body {
     }
 }
 
-
 /* _________________Секция коллекции основной страницы_____________ */
 
 .collection {
     &__container {
-        padding-top: 35px;
+        padding-top: 65px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -278,10 +275,15 @@ body {
     &__snapshot {
         width: 100%;
         height: 180px;
-        margin-top: 30px;
+
         display: flex;
         align-items: center;
         justify-content: center;
+
+        &:last-child {
+            margin-top: 30px;
+        }
+
         & h2 {
             text-align: center;
             font-size: 16px;
@@ -295,24 +297,26 @@ body {
             color: #f16d7f;
         }
         &--woman {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/collection/snapshot/woman.png);
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url(../img/collection/snapshot/woman.png);
         }
         &--man {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/collection/snapshot/man.png);
         }
         &--kid {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/collection/snapshot/kids.png);
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url(../img/collection/snapshot/kids.png);
         }
         &--things {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/collection/snapshot/things.png);
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url(../img/collection/snapshot/things.png);
         }
     }
     &__snapshot:not(:last-child) {
-        width: 360px;
+        width: 32%;
         height: 260px;
     }
 }
-
 
 /* _____________Товары основной страницы________________ */
 
@@ -336,11 +340,17 @@ body {
         color: #9f9f9f;
     }
     &__product {
-        margin-top: 18px;
+        margin-top: 48px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        &__Card {
+        &__Card:nth-of-type(4) {
+            margin-top: 30px;
+        }
+        &__Card:nth-of-type(5) {
+            margin-top: 30px;
+        }
+        &__Card:nth-of-type(6) {
             margin-top: 30px;
         }
     }
@@ -445,7 +455,6 @@ body {
     color: #ef5b70;
 }
 
-
 /* __________Слайдер каталога продукты_____________ */
 
 .slideCatolog {
@@ -455,7 +464,6 @@ body {
         justify-content: space-between;
     }
 }
-
 
 /* ____________Выбор продукции Cart________________ */
 
@@ -484,7 +492,7 @@ body {
                 font-size: 14px;
                 line-height: 17px;
                 color: #000000;
-                border: 1px solid #A4A4A4;
+                border: 1px solid #a4a4a4;
             }
         }
     }
@@ -511,13 +519,13 @@ body {
                 color: #222222;
             }
             & input:first-child {
-                color: #B1B1B1;
+                color: #b1b1b1;
             }
             & input::placeholder {
                 color: #222222;
             }
             & input:first-child::placeholder {
-                color: #B1B1B1;
+                color: #b1b1b1;
             }
             & button {
                 margin-top: 24px;
@@ -529,15 +537,15 @@ body {
                 font-weight: 300;
                 font-size: 11px;
                 line-height: 13px;
-                color: #4A4A4A;
+                color: #4a4a4a;
                 text-transform: uppercase;
-                border: 1px solid #A4A4A4;
-                background: #FFFFFF;
+                border: 1px solid #a4a4a4;
+                background: #ffffff;
             }
         }
         &__completion {
             margin-top: 57px;
-            background: #F5F3F3;
+            background: #f5f3f3;
             padding: 39px 0 42px 0;
             &__price {
                 display: flex;
@@ -546,7 +554,7 @@ body {
                 & h3 {
                     font-size: 11px;
                     line-height: 13px;
-                    color: #4A4A4A;
+                    color: #4a4a4a;
                     margin-right: 34px;
                     & strong {
                         margin-left: 25px;
@@ -566,16 +574,16 @@ body {
                 }
             }
             &__end {
-                border-top: 1px solid #E2E2E2;
+                border-top: 1px solid #e2e2e2;
                 margin: 21px 43px 0 44px;
                 padding-top: 27px;
                 width: 275px;
                 & a {
-                    background: #F16D7F;
+                    background: #f16d7f;
                     font-weight: 300;
                     font-size: 16px;
                     line-height: 19px;
-                    color: #FFFFFF;
+                    color: #ffffff;
                     padding: 15px 42px;
                 }
             }
@@ -587,7 +595,7 @@ body {
     width: 100%;
     height: 306px;
     display: flex;
-    box-shadow: 10px 15px 15px #E5E5E5;
+    box-shadow: 10px 15px 15px #e5e5e5;
     &__img {
         & img {
             width: 262px;
@@ -629,7 +637,7 @@ body {
         &__choice {
             display: flex;
             &__numb {
-                border: 1px solid #EAEAEA;
+                border: 1px solid #eaeaea;
                 padding: 0 16px;
                 margin-left: 24px;
                 & strong {
@@ -641,7 +649,6 @@ body {
         }
     }
 }
-
 
 /* _________________Регистрация_____________________ */
 
@@ -665,14 +672,14 @@ body {
             height: 44px;
             width: 100%;
             margin-top: 21px;
-            border: 1px solid #A4A4A4;
+            border: 1px solid #a4a4a4;
             font-weight: 300;
             font-size: 13px;
             line-height: 16px;
             padding-left: 17px;
-            color: #B1B1B1;
+            color: #b1b1b1;
             &::placeholder {
-                color: #B1B1B1;
+                color: #b1b1b1;
             }
         }
         & fieldset {
@@ -687,7 +694,7 @@ body {
             input {
                 width: 17px;
                 height: 17px;
-                border: 1px solid #A4A4A4;
+                border: 1px solid #a4a4a4;
                 margin-right: 10px;
                 &:last-child {
                     margin-left: 20px;
@@ -700,20 +707,20 @@ body {
             font-weight: 300;
             font-size: 13px;
             line-height: 16px;
-            color: #B1B1B1;
+            color: #b1b1b1;
         }
         &__btn {
             margin-top: 39px;
             width: 167px;
             height: 50px;
             border: none;
-            background: #F16D7F;
+            background: #f16d7f;
             display: flex;
             align-items: center;
             padding-left: 29px;
             font-size: 14px;
             line-height: 17px;
-            color: #FFFFFF;
+            color: #ffffff;
             background-image: url(../img/sign/arrow__btn-reg.svg);
             background-repeat: no-repeat;
             background-position: 110px 20px;
@@ -782,11 +789,13 @@ body {
     20% {
         transform: rotateX(360deg);
     }
-    40% {}
+    40% {
+    }
     60% {
         transform: rotateX(360deg);
     }
-    100% {}
+    100% {
+    }
 }
 
 @keyframes test0 {
@@ -796,7 +805,8 @@ body {
     20% {
         opacity: 0;
     }
-    40% {}
+    40% {
+    }
     60% {
         opacity: 0.5;
     }
@@ -829,7 +839,8 @@ body {
         margin-left: -500px;
         color: black;
     }
-    100% {}
+    100% {
+    }
 }
 
 @keyframes test2 {
@@ -856,7 +867,8 @@ body {
     60% {
         margin-left: -500px;
     }
-    100% {}
+    100% {
+    }
 }
 
 @keyframes test3 {
@@ -882,7 +894,8 @@ body {
     60% {
         margin-left: -335px;
     }
-    100% {}
+    100% {
+    }
 }
 
 @keyframes test4 {
@@ -909,7 +922,8 @@ body {
     60% {
         margin-left: -500px;
     }
-    100% {}
+    100% {
+    }
 }
 
 @keyframes test5 {
@@ -936,9 +950,9 @@ body {
         margin-left: -500px;
         color: black;
     }
-    100% {}
+    100% {
+    }
 }
-
 
 /* _______________Блок с инфорацией______________ */
 
@@ -970,7 +984,6 @@ body {
         }
     }
 }
-
 
 /* ________________________Подвал___________________ */
 
@@ -1077,4 +1090,296 @@ body {
             }
         }
     }
+}
+
+@media (min-width: 768px) and (max-width: 1026px) {
+    /* Фон основной страницы с мужчиной */
+
+    .picPage {
+        height: 23em;
+        &__container {
+            height: 100%;
+            background: url(../img/header/man.png) no-repeat 0 0;
+            background-size: 386px;
+        }
+        &__title {
+            margin-right: 32px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+
+            &--fat {
+                font-size: 44px;
+                line-height: 53px;
+                font-weight: 900;
+            }
+
+            &--color {
+                font-size: 37px;
+                line-height: 44px;
+            }
+        }
+    }
+
+    /* _________________Секция коллекции основной страницы_____________ */
+
+    .collection {
+        &__container {
+            padding-top: 20px;
+        }
+        &__snapshot {
+            height: 116px;
+
+            &:last-child {
+                margin-top: 20px;
+            }
+            &--woman {
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            &--man {
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            &--kid {
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            &--things {
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+        }
+        &__snapshot:not(:last-child) {
+            height: 167px;
+        }
+    }
+
+    /* _____________Товары основной страницы________________ */
+
+    .CardProduct {
+        &__container {
+            padding: 155px 0 65px 0;
+        }
+
+        &__product {
+            margin-top: 72px;
+
+            justify-content: center;
+
+            width: 100%;
+            &__Card:nth-of-type(1) {
+                margin-right: 16px;
+            }
+            &__Card:nth-of-type(3) {
+                margin-top: 16px;
+                margin-right: 16px;
+            }
+
+            &__Card:nth-of-type(4) {
+                margin-top: 16px;
+            }
+            &__Card:nth-of-type(5) {
+                margin-top: 16px;
+                margin-right: 16px;
+            }
+            &__Card:nth-of-type(6) {
+                margin-top: 16px;
+            }
+        }
+        &__btn {
+            margin-top: 32px;
+        }
+    }
+
+    /* _______________Блок с инфорацией______________ */
+
+    .inform {
+        height: 38.125em;
+        &__container {
+            padding: 48px 0 64px;
+            flex-direction: column;
+        }
+        &__blok {
+            width: 360px;
+            height: 134px;
+            text-align: center;
+        }
+    }
+
+
+    /* ________________________Подвал___________________ */
+
+.footer {
+    &__subscribe {
+        height: 38.375em;
+        
+        &__container {
+            padding: 54px 0 140px;
+            flex-direction: column;
+            justify-content: center;
+        
+        }
+        &__inquiry {
+            margin-top: 48px;
+        }
+    }
+    &__bottom {
+        padding: 0 32px;
+    }
+}
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+    /* Фон основной страницы с мужчиной */
+
+    .picPage {
+        height: 23em;
+
+        &__container {
+            justify-content: center;
+
+            background: none;
+        }
+        &__title {
+            margin-right: 0;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+
+            &--fat {
+                font-size: 38px;
+                line-height: 46px;
+                font-weight: 900;
+            }
+
+            &--color {
+                font-size: 20px;
+                line-height: 24px;
+            }
+        }
+    }
+
+    /* _________________Секция коллекции основной страницы_____________ */
+
+    .collection {
+        &__container {
+            padding-top: 64px;
+            flex-direction: column;
+        }
+        &__snapshot {
+            width: 100%;
+            height: 111px;
+
+            &:not(:first-child) {
+                margin-top: 32px;
+            }
+            &--woman {
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            &--man {
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            &--kid {
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+            &--things {
+                background-size: 100%;
+                background-repeat: no-repeat;
+            }
+        }
+        &__snapshot:not(:last-child) {
+            width: 100%;
+            height: 247px;
+        }
+    }
+
+    /* _____________Товары основной страницы________________ */
+
+    .CardProduct {
+        &__container {
+            padding: 64px 0 96px 0;
+        }
+
+        &__product {
+            margin-top: 65px;
+            flex-direction: column;
+
+            flex-wrap: nowrap;
+            align-items: center;
+            width: 100%;
+
+            &__Card:not(:first-child) {
+                margin-top: 16px;
+            }
+
+            &__Card:nth-of-type(1) {
+                margin-right: 0;
+            }
+            &__Card:nth-of-type(3) {
+                margin-right: 0;
+            }
+
+            &__Card:nth-of-type(5) {
+                margin-right: 0;
+            }
+        }
+        &__btn {
+            margin-top: 41px;
+        }
+    }
+
+    /* _______________Блок с инфорацией______________ */
+
+    .inform {
+        height: 38.125em;
+        &__container {
+            padding: 48px 0 81px;
+            flex-direction: column;
+        }
+        &__blok {
+            width: 347px;
+            height: 129px;
+            text-align: center;
+        }
+    }
+
+     /* ________________________Подвал___________________ */
+
+.footer {
+    &__subscribe {
+        height: 34.375em;
+        
+        &__container {
+            padding: 54px 0 109px;
+            flex-direction: column;
+            justify-content: center;
+        
+        }
+        &__inquiry {
+            margin-top: 48px;
+        }
+    }
+    &__bottom {
+        height: 143px;
+        
+        padding: 43px 0 9px 0;
+        
+        &__container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        & p {
+            order: 1;
+        }
+
+        &__socialnetwork {
+            order: 0;
+        }
+    }
+}
 }

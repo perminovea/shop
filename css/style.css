@@ -53,16 +53,207 @@ body {
   padding: 18px 0 19px 0;
 }
 
-.header__container a {
-  text-decoration: none;
-}
-
 .header__left__logo {
   margin-right: 41px;
 }
 
-.header__right__logo:not(:last-child) {
+.header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__right__element:hover {
+  opacity: 0.8;
+}
+
+.header__right__element:not(:last-child) {
   margin-right: 33px;
+}
+
+.header__basket__container {
+  width: 42px;
+  height: 39px;
+  position: relative;
+  padding: 5px 10px 0 0;
+}
+
+.header__basket__container button {
+  width: 19px;
+  height: 19px;
+  border-radius: 50px;
+  border: none;
+  background: #f16d7f;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.header__main {
+  width: 32px;
+  height: 23px;
+}
+
+.header__main__burger {
+  cursor: pointer;
+}
+
+.header__main__burger span {
+  display: block;
+  background: #e8e8e8;
+  width: 100%;
+  height: 3px;
+}
+
+.header__main__burger::before, .header__main__burger::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 3px;
+}
+
+.header__main__burger::after {
+  margin-top: 7px;
+  background: #e8e8e8;
+}
+
+.header__main__burger::before {
+  margin-bottom: 7px;
+  background: #e8e8e8;
+}
+
+.header__main__submenu {
+  display: none;
+  position: absolute;
+  z-index: 15;
+  background: #ffffff;
+  width: 232px;
+  height: 47.75em;
+  top: 79px;
+  right: 0;
+  /* outline: 3px solid orangered; */
+  padding: 16px 17px 0 33px;
+}
+
+.header__main__submenu .close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.header__main__submenu .close:hover {
+  opacity: 0.8;
+}
+
+.header__main__submenu .close label {
+  cursor: pointer;
+}
+
+.header__main__submenu h3 {
+  margin-left: 1px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-top: 9px;
+}
+
+.header__main__submenu h4 a {
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+}
+
+.header__main__submenu h4:first-of-type {
+  margin-top: 24px;
+}
+
+.header__main__submenu h4:not(:first-of-type) {
+  margin-top: 20px;
+}
+
+.header__main__submenu h4:hover {
+  opacity: 0.8;
+}
+
+.header__main__submenu ul {
+  margin-top: 12px;
+  list-style-type: none;
+  /* Непонимаю, почему не могу применить элемент по типу li */
+}
+
+.header__main__submenu ul li {
+  margin-top: 11px;
+  margin-left: 21px;
+}
+
+.header__main__submenu ul li a {
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+}
+
+.header__main__submenu ul all:nth-of-type(1, 5, 10) {
+  margin-top: 0;
+}
+
+.header__main__submenu ul all:nth-of-type(9, 14, 15) {
+  margin-top: 16px;
+}
+
+.header__main__submenu ul li:hover a {
+  color: #f16d7f;
+}
+
+.header__main #point {
+  display: none;
+}
+
+.header__main #point:checked ~ .header__main__submenu {
+  display: block;
+}
+
+.header__main #point:not(checked) ~ .header__main__submenu {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .header__container {
+    padding: 18px 32px 19px 32px;
+  }
+  .header__main__submenu {
+    height: 23em;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  .header__container {
+    padding: 18px 16px 19px 16px;
+  }
+  .header__registration {
+    display: none;
+  }
+  .header__basket {
+    display: none;
+  }
+  .header__right__element:not(:last-child) {
+    margin-right: 0;
+  }
+  .header__main__submenu {
+    height: 23em;
+    overflow: auto;
+  }
 }
 
 /* _____________Фон основной страницы с мужчиной__________ */
@@ -89,9 +280,9 @@ body {
   padding-left: 16px;
   border-left: 12px solid #F16D7F;
   margin-right: 100px;
-  font-weight: 900;
+  font-weight: 700;
   font-size: 32px;
-  line-height: 36px;
+  line-height: 38px;
   color: #222222;
   text-transform: uppercase;
 }
@@ -99,10 +290,13 @@ body {
 .picPage__title--fat {
   font-size: 48px;
   line-height: 58px;
+  font-weight: 900;
 }
 
 .picPage__title--color {
   color: #f16d7f;
+  font-size: 32px;
+  line-height: 38px;
 }
 
 /* _______________Навигация страницы католог_________________ */
@@ -166,7 +360,7 @@ body {
 .shopping__navСatolog h1 {
   font-size: 24px;
   line-height: 29px;
-  color: #F16D7F;
+  color: #f16d7f;
   text-transform: uppercase;
 }
 
@@ -379,7 +573,7 @@ body {
 
 /* _________________Секция коллекции основной страницы_____________ */
 .collection__container {
-  padding-top: 35px;
+  padding-top: 65px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,7 +587,6 @@ body {
 .collection__snapshot {
   width: 100%;
   height: 180px;
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,6 +596,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.collection__snapshot:last-child {
+  margin-top: 30px;
 }
 
 .collection__snapshot h2 {
@@ -440,7 +637,7 @@ body {
 }
 
 .collection__snapshot:not(:last-child) {
-  width: 360px;
+  width: 32%;
   height: 260px;
 }
 
@@ -474,7 +671,7 @@ body {
 }
 
 .CardProduct__product {
-  margin-top: 18px;
+  margin-top: 48px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,7 +682,15 @@ body {
           justify-content: space-between;
 }
 
-.CardProduct__product__Card {
+.CardProduct__product__Card:nth-of-type(4) {
+  margin-top: 30px;
+}
+
+.CardProduct__product__Card:nth-of-type(5) {
+  margin-top: 30px;
+}
+
+.CardProduct__product__Card:nth-of-type(6) {
   margin-top: 30px;
 }
 
@@ -745,7 +950,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #000000;
-  border: 1px solid #A4A4A4;
+  border: 1px solid #a4a4a4;
 }
 
 .shopCardProduct__delivery {
@@ -782,7 +987,7 @@ body {
 }
 
 .shopCardProduct__delivery form input:first-child {
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .shopCardProduct__delivery form input::-webkit-input-placeholder {
@@ -802,19 +1007,19 @@ body {
 }
 
 .shopCardProduct__delivery form input:first-child::-webkit-input-placeholder {
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .shopCardProduct__delivery form input:first-child:-ms-input-placeholder {
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .shopCardProduct__delivery form input:first-child::-ms-input-placeholder {
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .shopCardProduct__delivery form input:first-child::placeholder {
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .shopCardProduct__delivery form button {
@@ -833,15 +1038,15 @@ body {
   font-weight: 300;
   font-size: 11px;
   line-height: 13px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   text-transform: uppercase;
-  border: 1px solid #A4A4A4;
-  background: #FFFFFF;
+  border: 1px solid #a4a4a4;
+  background: #ffffff;
 }
 
 .shopCardProduct__delivery__completion {
   margin-top: 57px;
-  background: #F5F3F3;
+  background: #f5f3f3;
   padding: 39px 0 42px 0;
 }
 
@@ -861,7 +1066,7 @@ body {
 .shopCardProduct__delivery__completion__price h3 {
   font-size: 11px;
   line-height: 13px;
-  color: #4A4A4A;
+  color: #4a4a4a;
   margin-right: 34px;
 }
 
@@ -884,18 +1089,18 @@ body {
 }
 
 .shopCardProduct__delivery__completion__end {
-  border-top: 1px solid #E2E2E2;
+  border-top: 1px solid #e2e2e2;
   margin: 21px 43px 0 44px;
   padding-top: 27px;
   width: 275px;
 }
 
 .shopCardProduct__delivery__completion__end a {
-  background: #F16D7F;
+  background: #f16d7f;
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 15px 42px;
 }
 
@@ -905,8 +1110,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-shadow: 10px 15px 15px #E5E5E5;
-          box-shadow: 10px 15px 15px #E5E5E5;
+  -webkit-box-shadow: 10px 15px 15px #e5e5e5;
+          box-shadow: 10px 15px 15px #e5e5e5;
 }
 
 .shopCard__img img {
@@ -961,7 +1166,7 @@ body {
 }
 
 .shopCard__text__choice__numb {
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
   padding: 0 16px;
   margin-left: 24px;
 }
@@ -1007,28 +1212,28 @@ body {
   height: 44px;
   width: 100%;
   margin-top: 21px;
-  border: 1px solid #A4A4A4;
+  border: 1px solid #a4a4a4;
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
   padding-left: 17px;
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .registration .form__field::-webkit-input-placeholder {
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .registration .form__field:-ms-input-placeholder {
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .registration .form__field::-ms-input-placeholder {
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .registration .form__field::placeholder {
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .registration .form fieldset {
@@ -1049,7 +1254,7 @@ body {
 .registration .form fieldset input {
   width: 17px;
   height: 17px;
-  border: 1px solid #A4A4A4;
+  border: 1px solid #a4a4a4;
   margin-right: 10px;
 }
 
@@ -1063,7 +1268,7 @@ body {
   font-weight: 300;
   font-size: 13px;
   line-height: 16px;
-  color: #B1B1B1;
+  color: #b1b1b1;
 }
 
 .registration .form__btn {
@@ -1071,7 +1276,7 @@ body {
   width: 167px;
   height: 50px;
   border: none;
-  background: #F16D7F;
+  background: #f16d7f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1081,7 +1286,7 @@ body {
   padding-left: 29px;
   font-size: 14px;
   line-height: 17px;
-  color: #FFFFFF;
+  color: #ffffff;
   background-image: url(../img/sign/arrow__btn-reg.svg);
   background-repeat: no-repeat;
   background-position: 110px 20px;
@@ -1698,5 +1903,279 @@ body {
 
 .footer__bottom__socialnetwork__logo:hover svg {
   fill: #ffffff;
+}
+
+@media (min-width: 768px) and (max-width: 1026px) {
+  /* Фон основной страницы с мужчиной */
+  .picPage {
+    height: 23em;
+  }
+  .picPage__container {
+    height: 100%;
+    background: url(../img/header/man.png) no-repeat 0 0;
+    background-size: 386px;
+  }
+  .picPage__title {
+    margin-right: 32px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .picPage__title--fat {
+    font-size: 44px;
+    line-height: 53px;
+    font-weight: 900;
+  }
+  .picPage__title--color {
+    font-size: 37px;
+    line-height: 44px;
+  }
+  /* _________________Секция коллекции основной страницы_____________ */
+  .collection__container {
+    padding-top: 20px;
+  }
+  .collection__snapshot {
+    height: 116px;
+  }
+  .collection__snapshot:last-child {
+    margin-top: 20px;
+  }
+  .collection__snapshot--woman {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .collection__snapshot--man {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .collection__snapshot--kid {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .collection__snapshot--things {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .collection__snapshot:not(:last-child) {
+    height: 167px;
+  }
+  /* _____________Товары основной страницы________________ */
+  .CardProduct__container {
+    padding: 155px 0 65px 0;
+  }
+  .CardProduct__product {
+    margin-top: 72px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+  .CardProduct__product__Card:nth-of-type(1) {
+    margin-right: 16px;
+  }
+  .CardProduct__product__Card:nth-of-type(3) {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+  .CardProduct__product__Card:nth-of-type(4) {
+    margin-top: 16px;
+  }
+  .CardProduct__product__Card:nth-of-type(5) {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+  .CardProduct__product__Card:nth-of-type(6) {
+    margin-top: 16px;
+  }
+  .CardProduct__btn {
+    margin-top: 32px;
+  }
+  /* _______________Блок с инфорацией______________ */
+  .inform {
+    height: 38.125em;
+  }
+  .inform__container {
+    padding: 48px 0 64px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inform__blok {
+    width: 360px;
+    height: 134px;
+    text-align: center;
+  }
+  /* ________________________Подвал___________________ */
+  .footer__subscribe {
+    height: 38.375em;
+  }
+  .footer__subscribe__container {
+    padding: 54px 0 140px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__subscribe__inquiry {
+    margin-top: 48px;
+  }
+  .footer__bottom {
+    padding: 0 32px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 767px) {
+  /* Фон основной страницы с мужчиной */
+  .picPage {
+    height: 23em;
+  }
+  .picPage__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: none;
+  }
+  .picPage__title {
+    margin-right: 0;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .picPage__title--fat {
+    font-size: 38px;
+    line-height: 46px;
+    font-weight: 900;
+  }
+  .picPage__title--color {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  /* _________________Секция коллекции основной страницы_____________ */
+  .collection__container {
+    padding-top: 64px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collection__snapshot {
+    width: 100%;
+    height: 111px;
+  }
+  .collection__snapshot:not(:first-child) {
+    margin-top: 32px;
+  }
+  .collection__snapshot--woman {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .collection__snapshot--man {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .collection__snapshot--kid {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .collection__snapshot--things {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .collection__snapshot:not(:last-child) {
+    width: 100%;
+    height: 247px;
+  }
+  /* _____________Товары основной страницы________________ */
+  .CardProduct__container {
+    padding: 64px 0 96px 0;
+  }
+  .CardProduct__product {
+    margin-top: 65px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .CardProduct__product__Card:not(:first-child) {
+    margin-top: 16px;
+  }
+  .CardProduct__product__Card:nth-of-type(1) {
+    margin-right: 0;
+  }
+  .CardProduct__product__Card:nth-of-type(3) {
+    margin-right: 0;
+  }
+  .CardProduct__product__Card:nth-of-type(5) {
+    margin-right: 0;
+  }
+  .CardProduct__btn {
+    margin-top: 41px;
+  }
+  /* _______________Блок с инфорацией______________ */
+  .inform {
+    height: 38.125em;
+  }
+  .inform__container {
+    padding: 48px 0 81px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .inform__blok {
+    width: 347px;
+    height: 129px;
+    text-align: center;
+  }
+  /* ________________________Подвал___________________ */
+  .footer__subscribe {
+    height: 34.375em;
+  }
+  .footer__subscribe__container {
+    padding: 54px 0 109px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__subscribe__inquiry {
+    margin-top: 48px;
+  }
+  .footer__bottom {
+    height: 143px;
+    padding: 43px 0 9px 0;
+  }
+  .footer__bottom__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__bottom p {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer__bottom__socialnetwork {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
