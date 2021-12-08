@@ -1,0 +1,57 @@
+.Card {
+    width: 360px;
+    height: 581px;
+    background: #f8f8f8;
+    &:hover {
+        .Card__img__addtocart {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+    }
+    &__img {
+        width: 360px;
+        height: 420px;
+        position: relative;
+        background: #f8f8f8;
+        &__addtocart {
+            width: 360px;
+            height: 420px;
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+            & a {
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                padding: 13px 16px 13px 50px;
+                border: 1px solid #FFFFFF;
+                background: url(../img/sign/basketAddToCatd.png) no-repeat 10px 10px;
+            }
+        }
+    }
+    &__text {
+        padding: 25px 29px 20px 18px;
+        & h3 {
+            font-size: 13px;
+            line-height: 16px;
+            color: #000000;
+            text-transform: uppercase;
+        }
+        & p {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #5d5d5d;
+            margin: 13px 0 18px 0;
+        }
+        & span {
+            font-size: 16px;
+            line-height: 19px;
+            color: #f16d7f;
+        }
+    }
+}
