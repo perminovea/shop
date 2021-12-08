@@ -2095,6 +2095,42 @@ body {
   .w3-bar__catalog {
     margin-top: 40px;
   }
+  /* ______Кнопки слайдера продукта________ */
+  .merchandise__BTNslider__left {
+    top: 291px;
+  }
+  .merchandise__BTNslider__right {
+    top: 291px;
+  }
+  /* ______________________Фон с девушкой продукта_______________ */
+  .slide {
+    height: 623px;
+    width: 100%;
+  }
+  .slide img {
+    width: 466px;
+    height: 565px;
+  }
+  /* __________Слайдер каталога продукты_____________ */
+  .slideCatolog {
+    padding: 129px 0;
+  }
+  .slideCatolog__product {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slideCatolog__product__Card:nth-of-type(1) {
+    margin-right: 16px;
+  }
+  .slideCatolog__product__Card:nth-of-type(3) {
+    display: none;
+  }
+  /* ______________Описание продукта товара_______________ */
+  .description {
+    margin-top: 0;
+    position: relative;
+  }
   /* _______________Блок с инфорацией______________ */
   .inform {
     height: 38.125em;
@@ -2308,6 +2344,47 @@ body {
   }
   .w3-bar__catalog {
     margin-top: 40px;
+  }
+  /* ______Кнопки слайдера продукта________ */
+  .merchandise__BTNslider__left {
+    top: 290px;
+  }
+  .merchandise__BTNslider__right {
+    top: 290px;
+  }
+  /* ______________________Фон с девушкой продукта_______________ */
+  .slide {
+    height: 624px;
+    width: 100%;
+  }
+  .slide img {
+    width: 374px;
+    height: 454px;
+  }
+  /* __________Слайдер каталога продукты_____________ */
+  .slideCatolog {
+    padding: 64px 0;
+  }
+  .slideCatolog__product {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .slideCatolog__product__Card:nth-of-type(2) {
+    display: none;
+  }
+  /* ______________Описание продукта товара_______________ */
+  .description {
+    margin-top: 0;
+    position: relative;
+  }
+  .description__box__bottom__filter h3 {
+    font-size: 10px;
+    line-height: 12px;
   }
   /* _______________Блок с инфорацией______________ */
   .inform {

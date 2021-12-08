@@ -1292,6 +1292,51 @@ body {
         margin-top: 40px;
     }
 
+    /* ______Кнопки слайдера продукта________ */
+
+    .merchandise {
+        &__BTNslider__left {
+            top: 291px;
+        }
+
+        &__BTNslider__right {
+            top: 291px;
+        }
+    }
+
+    /* ______________________Фон с девушкой продукта_______________ */
+
+    .slide {
+        height: 623px;
+        width: 100%;
+        & img {
+            width: 466px;
+            height: 565px;
+        }
+    }
+
+    /* __________Слайдер каталога продукты_____________ */
+
+    .slideCatolog {
+        padding: 129px 0;
+        &__product {
+            justify-content: center;
+            &__Card:nth-of-type(1) {
+                margin-right: 16px;
+            }
+            &__Card:nth-of-type(3) {
+                display: none;
+            }
+        }
+    }
+
+    /* ______________Описание продукта товара_______________ */
+
+    .description {
+        margin-top: 0;
+        position: relative;
+    }
+
     /* _______________Блок с инфорацией______________ */
 
     .inform {
@@ -1522,9 +1567,62 @@ body {
         margin-top: 40px;
     }
 
-    /* _______________Блок с инфорацией______________ */
+   
 
-    .inform {
+    /* ______Кнопки слайдера продукта________ */
+
+    .merchandise {
+        &__BTNslider__left {
+            top: 290px;
+        }
+
+        &__BTNslider__right {
+            top: 290px;
+        }
+    }
+
+    /* ______________________Фон с девушкой продукта_______________ */
+
+    .slide {
+        height: 624px;
+        width: 100%;
+
+        & img {
+            width: 374px;
+            height: 454px;
+        }
+    }
+
+    /* __________Слайдер каталога продукты_____________ */
+
+    .slideCatolog {
+        padding: 64px 0;
+        &__product {
+            justify-content: center;
+            flex-direction: column;
+            &__Card:nth-of-type(2) {
+                display: none;
+            }
+        }
+    }
+
+    /* ______________Описание продукта товара_______________ */
+
+    .description {
+        margin-top: 0;
+        position: relative;
+        &__box__bottom__filter {
+            & h3 {
+                font-size: 10px;
+                line-height: 12px;
+            }
+        }
+    }
+
+
+     /* _______________Блок с инфорацией______________ */
+
+     .inform {
         height: 38.125em;
         &__container {
             padding: 48px 0 81px;
@@ -1536,6 +1634,8 @@ body {
             text-align: center;
         }
     }
+
+
 
     /* ________________________Подвал___________________ */
 
