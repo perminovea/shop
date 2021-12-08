@@ -2441,6 +2441,9 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .shopCardProduct__product__functions {
     margin-top: 30px;
@@ -2476,8 +2479,17 @@ body {
   .shopCardProduct__delivery__completion {
     margin-top: 48px;
   }
+  .shopCardProduct__product {
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .shopCardProduct__product--indent:not(:first-child) {
+    margin-top: 32px;
+  }
   .shopCard {
-    width: 214px;
+    width: 358px;
     height: 188px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2486,7 +2498,7 @@ body {
             box-shadow: 5px 10px 10px #e5e5e5;
   }
   .shopCard__img img {
-    width: 243px;
+    width: 143px;
     height: 188px;
   }
   .shopCard__text {
@@ -2507,8 +2519,10 @@ body {
     fill: #575757;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 5;
     cursor: pointer;
+    width: 10px;
+    height: 11px;
   }
   .shopCard__text h3 {
     font-size: 14px;
