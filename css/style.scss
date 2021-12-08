@@ -766,195 +766,6 @@
                 }
             }
         }
-        &:hover {
-            form {
-                animation: test0 25s;
-            }
-            ul {
-                animation: test 1s;
-                li {
-                    &:nth-child(1) {
-                        animation: test1 5s;
-                    }
-                    &:nth-child(2) {
-                        animation: test2 25s;
-                    }
-                    &:nth-child(3) {
-                        animation: test3 25s;
-                    }
-                    &:nth-child(4) {
-                        animation: test4 25s;
-                    }
-                    &:nth-child(5) {
-                        animation: test5 25s;
-                    }
-                }
-            }
-        }
-    }
-    
-    @keyframes test {
-        0% {
-            transform: rotateX(720deg);
-        }
-        20% {
-            transform: rotateX(360deg);
-        }
-        40% {}
-        60% {
-            transform: rotateX(360deg);
-        }
-        100% {}
-    }
-    
-    @keyframes test0 {
-        0% {
-            opacity: 0.5;
-        }
-        20% {
-            opacity: 0;
-        }
-        40% {}
-        60% {
-            opacity: 0.5;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
-    
-    @keyframes test1 {
-        0% {
-            color: aqua;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 35px;
-        }
-        20% {
-            margin-left: -300px;
-            color: gold;
-            font-weight: 900;
-            font-size: 36px;
-            line-height: 45px;
-        }
-        40% {
-            margin-left: -400px;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 35px;
-        }
-        60% {
-            margin-left: -500px;
-            color: black;
-        }
-        100% {}
-    }
-    
-    @keyframes test2 {
-        0% {
-            color: hotpink;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 35px;
-        }
-        20% {
-            margin-left: -400px;
-            color: lightblue;
-            font-weight: 900;
-            font-size: 36px;
-            line-height: 45px;
-        }
-        40% {
-            margin-left: -500px;
-            color: black;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 35px;
-        }
-        60% {
-            margin-left: -500px;
-        }
-        100% {}
-    }
-    
-    @keyframes test3 {
-        0% {
-            color: lightseagreen;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 35px;
-        }
-        20% {
-            margin-left: -500px;
-            color: black;
-            font-weight: 900;
-            font-size: 36px;
-            line-height: 45px;
-        }
-        40% {
-            margin-left: -500px;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 35px;
-        }
-        60% {
-            margin-left: -335px;
-        }
-        100% {}
-    }
-    
-    @keyframes test4 {
-        0% {
-            color: yellow;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 35px;
-        }
-        20% {
-            margin-left: -400px;
-            color: springgreen;
-            font-weight: 900;
-            font-size: 36px;
-            line-height: 45px;
-        }
-        40% {
-            margin-left: -500px;
-            color: black;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 35px;
-        }
-        60% {
-            margin-left: -500px;
-        }
-        100% {}
-    }
-    
-    @keyframes test5 {
-        0% {
-            color: turquoise;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 35px;
-        }
-        20% {
-            margin-left: -300px;
-            color: peru;
-            font-weight: 900;
-            font-size: 36px;
-            line-height: 45px;
-        }
-        40% {
-            margin-left: -400px;
-            font-weight: 300;
-            font-size: 30px;
-            line-height: 35px;
-        }
-        60% {
-            margin-left: -500px;
-            color: black;
-        }
-        100% {}
     }
     /* _______________Блок с инфорацией______________ */
     
@@ -1297,6 +1108,30 @@
                 }
             }
         }
+        /* _________________Регистрация_____________________ */
+        .registration {
+            padding: 40px 0 96px 0;
+            &__text {
+                margin-left: 22px;
+                & h2 {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                & p {
+                    margin-top: 32px;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    width: 354px;
+                }
+                & li {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
         /* _______________Блок с инфорацией______________ */
         .inform {
             height: 38.125em;
@@ -1634,6 +1469,34 @@
                             line-height: 12px;
                         }
                     }
+                }
+            }
+        }
+        /* _________________Регистрация_____________________ */
+        .registration {
+            padding: 40px 0 100px 0;
+            &__container {
+                flex-direction: column;
+                align-items: center;
+            }
+            &__text {
+                margin-top: 40px;
+                & h2 {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+                & p {
+                    margin-top: 32px;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
+                    width: 354px;
+                }
+                & li {
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 19px;
                 }
             }
         }
