@@ -760,10 +760,10 @@ body {
             animation: test0 25s;
         }
         ul {
-            animation: test 15s;
+            animation: test 1s;
             li {
                 &:nth-child(1) {
-                    animation: test1 25s;
+                    animation: test1 5s;
                 }
                 &:nth-child(2) {
                     animation: test2 25s;
