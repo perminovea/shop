@@ -338,7 +338,7 @@ body {
   list-style-type: none;
 }
 
-.navСatolog__breadcrumbs ul li {
+.navСatolog__breadcrumbs ul li a {
   font-weight: 300;
   font-size: 14px;
   line-height: 17px;
@@ -777,12 +777,12 @@ body {
   color: #f16d7f;
 }
 
-.section__benefits-catolog {
-  margin-top: 51px;
-  padding-bottom: 96px;
+/* __________________Секция карточек в странице каталог________________*/
+.benefits {
+  padding: 51px 0 96px 0;
 }
 
-.container__benefits-catolog {
+.benefits__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -796,14 +796,13 @@ body {
   width: 100%;
 }
 
-.filter__benefits-catolog {
-  margin-bottom: 35px;
+.benefits__filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.left__filter__benefits-catolog {
+.benefits__filter__left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -812,7 +811,7 @@ body {
           align-items: center;
 }
 
-.title__filter__benefits-catolog {
+.benefits__filter__left h2 {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 14px;
@@ -821,7 +820,7 @@ body {
   margin-right: 11px;
 }
 
-.right__filter__benefits-catolog {
+.benefits__filter__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -834,7 +833,7 @@ body {
   padding-right: 70px;
 }
 
-.choice__right__filter {
+.benefits__filter__right__choice {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -843,15 +842,63 @@ body {
           align-items: center;
 }
 
-.choice__right__filter:not(:first-child) {
+.benefits__filter__right__choice:not(:first-child) {
   margin-left: 28px;
 }
 
-.subtite__right__filter {
+.benefits__filter__right__choice h2 {
   font-size: 14px;
   line-height: 17px;
   color: #6f6e6e;
   margin-right: 10px;
+}
+
+.benefits__product {
+  padding-top: 65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.benefits__product__Card:nth-of-type(1) {
+  margin-right: 30px;
+}
+
+.benefits__product__Card:nth-of-type(2) {
+  margin-right: 30px;
+}
+
+.benefits__product__Card:nth-of-type(4) {
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.benefits__product__Card:nth-of-type(5) {
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.benefits__product__Card:nth-of-type(6) {
+  margin-top: 30px;
+}
+
+.benefits__product__Card:nth-of-type(7) {
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.benefits__product__Card:nth-of-type(8) {
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.benefits__product__Card:nth-of-type(9) {
+  margin-top: 30px;
 }
 
 .w3-bar__catalog {
@@ -1333,13 +1380,13 @@ body {
 }
 
 .registration:hover ul {
-  -webkit-animation: test 15s;
-          animation: test 15s;
+  -webkit-animation: test 1s;
+          animation: test 1s;
 }
 
 .registration:hover ul li:nth-child(1) {
-  -webkit-animation: test1 25s;
-          animation: test1 25s;
+  -webkit-animation: test1 5s;
+          animation: test1 5s;
 }
 
 .registration:hover ul li:nth-child(2) {
@@ -1990,6 +2037,64 @@ body {
   .CardProduct__btn {
     margin-top: 32px;
   }
+  /* _______________Навигация страницы католог_________________ */
+  .navСatolog {
+    padding: 0 16px;
+  }
+  /* __________________Секция карточек в странице каталог________________*/
+  .benefits {
+    padding: 24px 0 64px 0;
+  }
+  .benefits__filter {
+    padding: 0 16px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .benefits__filter__right {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    padding-right: 0;
+  }
+  .benefits__product {
+    padding-top: 40px;
+  }
+  .benefits__product__Card:nth-of-type(1) {
+    margin-right: 16px;
+  }
+  .benefits__product__Card:nth-of-type(2) {
+    margin-right: 0;
+  }
+  .benefits__product__Card:nth-of-type(3) {
+    display: none;
+  }
+  .benefits__product__Card:nth-of-type(4) {
+    margin-right: 16px;
+    margin-top: 16px;
+  }
+  .benefits__product__Card:nth-of-type(5) {
+    margin-right: 0;
+    margin-top: 16px;
+  }
+  .benefits__product__Card:nth-of-type(6) {
+    margin-top: 16px;
+    margin-right: 16px;
+  }
+  .benefits__product__Card:nth-of-type(7) {
+    margin-right: 0;
+    margin-top: 16px;
+  }
+  .benefits__product__Card:nth-of-type(8) {
+    margin-right: 16px;
+    margin-top: 16px;
+  }
+  .benefits__product__Card:nth-of-type(9) {
+    margin-top: 16px;
+  }
+  .w3-bar__catalog {
+    margin-top: 40px;
+  }
   /* _______________Блок с инфорацией______________ */
   .inform {
     height: 38.125em;
@@ -2120,6 +2225,89 @@ body {
   }
   .CardProduct__btn {
     margin-top: 41px;
+  }
+  /* _______________Навигация страницы католог_________________ */
+  .navСatolog {
+    padding: 24px 0 46px 0;
+  }
+  .navСatolog__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  /* __________________Секция карточек в странице каталог________________*/
+  .benefits {
+    padding: 26px 0 64px 0;
+  }
+  .benefits__filter {
+    padding: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .benefits__filter__left h2 {
+    display: none;
+  }
+  .benefits__filter__left img {
+    width: 37px;
+    height: 25px;
+  }
+  .benefits__filter__right {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    padding-right: 0;
+  }
+  .benefits__filter__right__choice:not(:first-child) {
+    margin-left: 24px;
+  }
+  .benefits__filter__right__choice h2 {
+    font-size: 12px;
+    line-height: 14px;
+    margin-right: 9px;
+  }
+  .benefits__filter__right__choice img {
+    margin-top: -5px;
+  }
+  .benefits__product {
+    padding-top: 41px;
+  }
+  .benefits__product__Card:nth-of-type(1) {
+    margin-right: 0;
+  }
+  .benefits__product__Card:nth-of-type(2) {
+    margin-right: 0;
+    margin-top: 16px;
+  }
+  .benefits__product__Card:nth-of-type(3) {
+    display: none;
+  }
+  .benefits__product__Card:nth-of-type(4) {
+    margin-right: 0;
+    margin-top: 16px;
+  }
+  .benefits__product__Card:nth-of-type(5) {
+    margin-right: 0;
+    margin-top: 16px;
+  }
+  .benefits__product__Card:nth-of-type(6) {
+    margin-top: 16px;
+    margin-right: 0;
+  }
+  .benefits__product__Card:nth-of-type(7) {
+    margin-right: 0;
+    margin-top: 16px;
+  }
+  .benefits__product__Card:nth-of-type(8) {
+    margin-right: 0;
+    margin-top: 16px;
+  }
+  .benefits__product__Card:nth-of-type(9) {
+    margin-top: 16px;
+  }
+  .w3-bar__catalog {
+    margin-top: 40px;
   }
   /* _______________Блок с инфорацией______________ */
   .inform {
