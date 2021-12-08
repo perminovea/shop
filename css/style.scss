@@ -1337,6 +1337,38 @@ body {
         position: relative;
     }
 
+    /* ____________Выбор продукции Cart________________ */
+
+    .shopCardProduct {
+        padding: 59px 0 128px 0;
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        &__product__functions {
+            justify-content: center;
+            & a:nth-of-type(1) {
+                margin-right: 49px;
+            }
+        }
+
+        &__delivery {
+            & h2 {
+                margin-top: 0;
+            }
+            width: 768px;
+            margin-top: 64px;
+            display: flex;
+            justify-content: center;
+            &__completion {
+                margin-left: 16px;
+                margin-top: 37px;
+            }
+        }
+
+    }
+
     /* _______________Блок с инфорацией______________ */
 
     .inform {
@@ -1567,8 +1599,6 @@ body {
         margin-top: 40px;
     }
 
-   
-
     /* ______Кнопки слайдера продукта________ */
 
     .merchandise {
@@ -1620,9 +1650,114 @@ body {
     }
 
 
-     /* _______________Блок с инфорацией______________ */
+     /* ____________Выбор продукции Cart________________ */
 
-     .inform {
+     .cart__navСatolog__container {
+         
+         justify-content: center;
+         
+     }
+
+     .shopCardProduct {
+        padding: 59px 0 128px 0;
+        &__container {
+            flex-direction: column;
+            align-items: center;
+            
+        }
+        
+        &__product__functions {
+            margin-top: 30px;
+            justify-content: center;
+            & a {
+                padding: 9px 18px;
+                font-size: 12px;
+                line-height: 14px;
+            }
+            & a:nth-of-type(1) {
+                margin-right: 10px;
+            }
+        }
+
+        &__delivery {
+            & h2 {
+                margin-top: 0;
+            }
+            width: 100%;
+            margin-top: 48px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &__completion {
+                
+                margin-top: 48px;
+            }
+        }
+
+    }
+
+    .shopCard {
+        width: 214px;
+        height: 188px;
+        display: flex;
+        box-shadow: 5px 10px 10px #e5e5e5;
+        &__img {
+            & img {
+                width: 243px;
+                height: 188px;
+            }
+        }
+        &__text {
+            padding: 14px 12px 38px 17px;
+            width:100%;
+            &__title {
+                width: 100%;
+                position: relative;
+                margin-bottom: 26px;
+                & h2 {
+                    width: 143px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    
+                }
+                & svg {
+                    fill: #575757;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    cursor: pointer;
+                }
+            }
+            & h3 {
+                font-size: 14px;
+                line-height: 17px;
+                color: #575757;
+                & span {
+                    color: #f16d7f;
+                }
+                &:not(:first-child) {
+                    margin-top: 4px;
+                }
+            }
+            &__choice {
+                display: flex;
+                &__numb {
+                    border: 1px solid #eaeaea;
+                    padding: 1px 9px;
+                    margin-left: 15px;
+                    & strong {
+                        font-size: 10px;
+                        line-height: 12px;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    /* _______________Блок с инфорацией______________ */
+
+    .inform {
         height: 38.125em;
         &__container {
             padding: 48px 0 81px;
@@ -1634,8 +1769,6 @@ body {
             text-align: center;
         }
     }
-
-
 
     /* ________________________Подвал___________________ */
 
