@@ -29,7 +29,11 @@
                 color: #FFFFFF;
                 padding: 13px 16px 13px 50px;
                 border: 1px solid #FFFFFF;
-                background: url(../img/sign/basketAddToCatd.png) no-repeat 10px 10px;
+                background: url(../img/sign/basketAddToCatd.png) no-repeat 10px 10px, ;
+            }
+            & a:hover {
+                background: url(../img/sign/basketAddToCatd.png) no-repeat 10px 10px, #F16D7F;
+                border: none;
             }
         }
     }

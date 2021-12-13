@@ -706,6 +706,11 @@ body {
   text-decoration: none;
 }
 
+.CardProduct__btn:hover {
+  background: #F16D7F;
+  color: #FFFFFF;
+}
+
 .Card {
   width: 360px;
   height: 581px;
@@ -750,6 +755,11 @@ body {
   padding: 13px 16px 13px 50px;
   border: 1px solid #FFFFFF;
   background: url(../img/sign/basketAddToCatd.png) no-repeat 10px 10px;
+}
+
+.Card__img__addtocart a:hover {
+  background: url(../img/sign/basketAddToCatd.png) no-repeat 10px 10px, #F16D7F;
+  border: none;
 }
 
 .Card__text {
@@ -927,9 +937,17 @@ body {
   color: #ebebeb;
 }
 
+.w3-btn:hover {
+  color: #000000;
+}
+
 .w3-btn__arrow {
   list-style-type: none;
   color: #000000;
+}
+
+.w3-btn__arrow:hover {
+  opacity: 0.8;
 }
 
 .w3-btn__color {
@@ -1305,7 +1323,7 @@ body {
   margin-right: 10px;
 }
 
-.registration .form fieldset input:last-child {
+.registration .form fieldset input:not(:first-child) {
   margin-left: 20px;
 }
 
@@ -1436,7 +1454,7 @@ body {
 
 .footer__subscribe__biography {
   background: url(../img/footer/Intersect.png) no-repeat center 0;
-  padding-top: 100px;
+  padding-top: 120px;
 }
 
 .footer__subscribe__biography p {
@@ -1504,6 +1522,11 @@ body {
   font-size: 14px;
   line-height: 17px;
   color: #ffffff;
+  cursor: pointer;
+}
+
+.footer__subscribe__inquiry form button:hover {
+  background: #E05C6E;
 }
 
 .footer__bottom {
@@ -2251,8 +2274,21 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .footer__subscribe__biography p {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+  }
   .footer__subscribe__inquiry {
     margin-top: 48px;
+  }
+  .footer__subscribe__inquiry h2 {
+    font-size: 14px;
+    line-height: 21, 45px;
+  }
+  .footer__subscribe__inquiry span {
+    font-size: 24px;
+    line-height: 153.2%;
   }
   .footer__bottom {
     height: 143px;

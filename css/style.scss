@@ -352,6 +352,10 @@
             background: white;
             margin-top: 49px;
             text-decoration: none;
+            &:hover {
+                background: #F16D7F;
+                color: #FFFFFF;
+            }
         }
     }
     
@@ -458,11 +462,17 @@
         font-size: 16px;
         line-height: 19px;
         color: #ebebeb;
+        &:hover {
+            color: #000000;
+        }
     }
     
     .w3-btn__arrow {
         list-style-type: none;
         color: #000000;
+        &:hover {
+            opacity: 0.8;
+        }
     }
     
     .w3-btn__color {
@@ -707,7 +717,7 @@
                     height: 17px;
                     border: 1px solid #a4a4a4;
                     margin-right: 10px;
-                    &:last-child {
+                    &:not(:first-child) {
                         margin-left: 20px;
                     }
                 }
@@ -812,7 +822,7 @@
             }
             &__biography {
                 background: url(../img/footer/Intersect.png) no-repeat center 0;
-                padding-top: 100px;
+                padding-top: 120px;
                 & p {
                     max-width: 360px;
                     font-size: 20px;
@@ -860,6 +870,10 @@
                         font-size: 14px;
                         line-height: 17px;
                         color: #ffffff;
+                        cursor: pointer;
+                        &:hover {
+                            background: #E05C6E;
+                        }
                     }
                 }
             }
@@ -1522,8 +1536,21 @@
                     flex-direction: column;
                     justify-content: center;
                 }
+                &__biography p {
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 22px;
+                }
                 &__inquiry {
                     margin-top: 48px;
+                    & h2 {
+                        font-size: 14px;
+                        line-height: 21, 45px;
+                    }
+                    & span {
+                        font-size: 24px;
+                        line-height: 153.2%;
+                    }
                 }
             }
             &__bottom {
