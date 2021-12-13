@@ -81,7 +81,7 @@ body {
   padding: 5px 10px 0 0;
 }
 
-.header__basket__container button {
+.header__basket__container__btn {
   width: 19px;
   height: 19px;
   border-radius: 50px;
@@ -94,6 +94,15 @@ body {
   line-height: 14px;
   color: #ffffff;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__main {
@@ -204,11 +213,27 @@ body {
   color: #6f6e6e;
 }
 
-.header__main__submenu ul all:nth-of-type(1, 5, 10) {
+.header__main__submenu ul all:nth-of-type(1) {
   margin-top: 0;
 }
 
-.header__main__submenu ul all:nth-of-type(9, 14, 15) {
+.header__main__submenu ul all:nth-of-type(5) {
+  margin-top: 0;
+}
+
+.header__main__submenu ul all:nth-of-type(10) {
+  margin-top: 0;
+}
+
+.header__main__submenu ul all:nth-of-type(9) {
+  margin-top: 16px;
+}
+
+.header__main__submenu ul all:nth-of-type(14) {
+  margin-top: 16px;
+}
+
+.header__main__submenu ul all:nth-of-type(15) {
   margin-top: 16px;
 }
 

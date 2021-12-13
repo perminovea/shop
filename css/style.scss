@@ -683,7 +683,7 @@
             width: 360px;
             display: flex;
             flex-direction: column;
-            & legend {
+            & h3 {
                 font-weight: 300;
                 font-size: 16px;
                 line-height: 19px;
@@ -843,7 +843,7 @@
                 & span {
                     color: #222224;
                     font-size: 24px;
-                    line-height: 167.2%;
+                    line-height: 22px;
                 }
                 & form {
                     display: flex;
