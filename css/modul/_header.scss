@@ -30,7 +30,7 @@
         padding: 5px 10px 0 0;
         
 
-        & button {
+        &__btn {
             width: 19px;
             height: 19px;
             border-radius: 50px;
@@ -43,6 +43,9 @@
             line-height: 14px;
             color: #ffffff;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 
@@ -151,13 +154,28 @@
 
                 }
                 /* Непонимаю, почему не могу применить элемент по типу li */
-                all:nth-of-type(1, 5, 10) {
+                all:nth-of-type(1) {
+                    margin-top: 0;
+                }
+                all:nth-of-type(5) {
+                    margin-top: 0;
+                }
+                all:nth-of-type(10) {
                     margin-top: 0;
                 }
 
-                all:nth-of-type(9, 14, 15) {
+                all:nth-of-type(9) {
                     margin-top: 16px;
                 }
+
+                all:nth-of-type(14) {
+                    margin-top: 16px;
+                }
+
+                all:nth-of-type(15) {
+                    margin-top: 16px;
+                }
+
 
                 li:hover {
                     a {

@@ -81,7 +81,7 @@ body {
   padding: 5px 10px 0 0;
 }
 
-.header__basket__container button {
+.header__basket__container__btn {
   width: 19px;
   height: 19px;
   border-radius: 50px;
@@ -94,6 +94,15 @@ body {
   line-height: 14px;
   color: #ffffff;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__main {
@@ -204,11 +213,27 @@ body {
   color: #6f6e6e;
 }
 
-.header__main__submenu ul all:nth-of-type(1, 5, 10) {
+.header__main__submenu ul all:nth-of-type(1) {
   margin-top: 0;
 }
 
-.header__main__submenu ul all:nth-of-type(9, 14, 15) {
+.header__main__submenu ul all:nth-of-type(5) {
+  margin-top: 0;
+}
+
+.header__main__submenu ul all:nth-of-type(10) {
+  margin-top: 0;
+}
+
+.header__main__submenu ul all:nth-of-type(9) {
+  margin-top: 16px;
+}
+
+.header__main__submenu ul all:nth-of-type(14) {
+  margin-top: 16px;
+}
+
+.header__main__submenu ul all:nth-of-type(15) {
   margin-top: 16px;
 }
 
@@ -1267,7 +1292,7 @@ body {
           flex-direction: column;
 }
 
-.registration .form legend {
+.registration .form h3 {
   font-weight: 300;
   font-size: 16px;
   line-height: 19px;
@@ -1488,7 +1513,7 @@ body {
 .footer__subscribe__inquiry span {
   color: #222224;
   font-size: 24px;
-  line-height: 167.2%;
+  line-height: 22px;
 }
 
 .footer__subscribe__inquiry form {
@@ -2182,7 +2207,7 @@ body {
     fill: #575757;
     position: absolute;
     right: 0;
-    top: 5;
+    top: 5px;
     cursor: pointer;
     width: 10px;
     height: 11px;
@@ -2285,7 +2310,7 @@ body {
   }
   .footer__subscribe__inquiry h2 {
     font-size: 14px;
-    line-height: 21, 45px;
+    line-height: 22px;
   }
   .footer__subscribe__inquiry span {
     font-size: 24px;
