@@ -85,7 +85,8 @@
             z-index: 15;
             background: #ffffff;
             width: 232px;
-            height: 47.75em;
+            /* height: 47.75em; */
+            height: calc(100vh - 79px);
             top: 79px;
             right: 0;
             /* outline: 3px solid orangered; */
@@ -187,7 +188,7 @@
             padding: 18px 32px 19px 32px;
         }
         &__main__submenu {
-            height: 23em;
+            /* height: 23em; */
             overflow: auto;
         }
     }
@@ -209,7 +210,7 @@
             margin-right: 0;
         }
         &__main__submenu {
-            height: 23em;
+            /* height: 23em; */
             overflow: auto;
         }
     

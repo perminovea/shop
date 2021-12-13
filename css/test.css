@@ -135,7 +135,8 @@ body {
   z-index: 15;
   background: #ffffff;
   width: 232px;
-  height: 47.75em;
+  /* height: 47.75em; */
+  height: calc(100vh - 79px);
   top: 79px;
   right: 0;
   /* outline: 3px solid orangered; */
@@ -232,7 +233,7 @@ body {
     padding: 18px 32px 19px 32px;
   }
   .header__main__submenu {
-    height: 23em;
+    /* height: 23em; */
     overflow: auto;
   }
 }
@@ -251,7 +252,7 @@ body {
     margin-right: 0;
   }
   .header__main__submenu {
-    height: 23em;
+    /* height: 23em; */
     overflow: auto;
   }
 }
@@ -766,7 +767,7 @@ body {
   padding: 25px 29px 20px 18px;
 }
 
-.Card__text h3 {
+.Card__text h3 a {
   font-size: 13px;
   line-height: 16px;
   color: #000000;
